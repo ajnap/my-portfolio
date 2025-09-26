@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Favicon Generator</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .favicon-preview {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, #0d6efd, #0a58ca);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        .instructions {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Alex Napierski - Favicon Generator</h1>
+
+    <div class="favicon-preview">AN</div>
+
+    <div class="instructions">
+        <h3>To create your favicon:</h3>
+        <ol>
+            <li>Right-click on the blue square above</li>
+            <li>Select "Save image as..." or "Copy image"</li>
+            <li>Save as "favicon.png" in your images/ folder</li>
+            <li>Resize to 32x32 pixels if needed</li>
+        </ol>
+
+        <h3>Alternative - Use an online favicon generator:</h3>
+        <p>Visit <a href="https://favicon.io/favicon-generator/" target="_blank">favicon.io</a> and create a text-based favicon with:</p>
+        <ul>
+            <li>Text: AN</li>
+            <li>Background: #0d6efd (blue)</li>
+            <li>Font: Arial Bold</li>
+            <li>Size: 32x32</li>
+        </ul>
+    </div>
+
+    <canvas id="faviconCanvas" width="32" height="32" style="border: 1px solid #ccc;"></canvas>
+
+    <script>
+        // Draw favicon on canvas
+        const canvas = document.getElementById('faviconCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Create gradient
+        const gradient = ctx.createLinearGradient(0, 0, 32, 32);
+        gradient.addColorStop(0, '#0d6efd');
+        gradient.addColorStop(1, '#0a58ca');
+
+        // Draw rounded rectangle background
+        ctx.fillStyle = gradient;
+        ctx.roundRect(0, 0, 32, 32, 6);
+        ctx.fill();
+
+        // Draw text
+        ctx.fillStyle = 'white';
+        ctx.font = 'bold 14px Arial';
+        ctx.textAlign = 'center';
+        ctx.fillText('AN', 16, 22);
+    </script>
+</body>
+</html>

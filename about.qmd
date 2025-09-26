@@ -1,17 +1,17 @@
 ---
-title: "About Me"
+title: "About Alex Napierski"
 ---
 
 ::: {.hero-banner .text-center}
 
-<img src="images/profile.jpg" alt="add photo to /images" class="rounded-circle mb-3" width="160">
+<img src="images/profile.jpg" alt="Alex Napierski - Professional Photo" class="rounded-circle mb-3" width="160">
 
-<h1>Your Name</h1>
+<h1>Alex Napierski</h1>
 
-<a href="https://linkedin.com/in/your-profile" class="btn btn-outline-primary btn-sm" target="_blank">
+<a href="https://www.linkedin.com/in/alex-napierski/" class="btn btn-outline-primary btn-sm" target="_blank">
   <i class="fab fa-linkedin"></i> LinkedIn
 </a>
-<a href="https://github.com/your-username" class="btn btn-outline-primary btn-sm" target="_blank">
+<a href="https://github.com/ajnap3" class="btn btn-outline-primary btn-sm" target="_blank">
   <i class="fab fa-github"></i> GitHub
 </a>
 
@@ -19,45 +19,51 @@ title: "About Me"
 
 ## Background
 
-Write a compelling narrative about your background, education, and what drives your passion for product management. This is your chance to tell your story and connect with potential employers or collaborators.
+I'm a passionate product management and analytics student with a strong foundation in building digital solutions that solve real-world problems. My journey combines technical skills with strategic thinking, allowing me to bridge the gap between user needs and technical implementation.
+
+Through my coursework and projects, I've developed expertise in product development, data analysis, and user experience design. I believe in the power of data-driven decision making and user-centered design to create products that truly make a difference.
 
 ### Education
 
-- **Degree Name**, University Name (Year)
-- **Relevant Coursework**: List key courses related to product management, analytics, or business
-- **Academic Achievements**: Honor societies, relevant projects, or awards
+- **Product Management & Analytics Program**, Brigham Young University (Current)
+- **Relevant Coursework**: Product Strategy, Data Analytics, User Experience Design, Business Intelligence, Software Development
+- **Academic Focus**: Digital product development, data-driven decision making, and strategic product management
 
 ### Experience
 
-#### Job/Internship Title - Company Name
-*Dates*
+#### Student Product Developer
+*2024 - Present*
 
-- Key accomplishment or responsibility
-- Another achievement with quantifiable results
-- Skills or technologies used
+- Built and deployed interactive web applications using modern development frameworks
+- Collaborated with development teams to deliver user-focused digital solutions
+- Applied product management principles to guide feature development and user experience decisions
 
-#### Another Position - Company Name
-*Dates*
+#### Project Portfolio
+*Academic & Personal Projects*
 
-- What you contributed to the organization
-- Projects you worked on
-- Impact you made
+- Developed full-stack applications with emphasis on user experience and technical excellence
+- Created data visualization and analytics dashboards for business insights
+- Implemented agile development practices and version control workflows
 
 ### Skills & Interests
 
 **Technical Skills**
-- Programming languages (Python, R, SQL)
-- Analytics tools (Tableau, Power BI, Google Analytics)
-- Product management tools (Jira, Confluence, Figma)
+- Programming languages (JavaScript, Python, HTML/CSS)
+- Development tools (GitHub, Vercel, Quarto, Claude Code)
+- Analytics and visualization (data analysis, web analytics)
+- Product management tools (project planning, user research, wireframing)
 
 **Soft Skills**
-- Communication and presentation
-- Cross-functional collaboration
-- Strategic thinking and problem-solving
+- Strategic product thinking and problem-solving
+- Cross-functional collaboration and communication
+- User-centered design and research
+- Data-driven decision making
 
 **Interests**
-Share what you're passionate about outside of work - this helps humanize your professional brand and can be great conversation starters.
+Beyond product development, I'm passionate about emerging technologies, user experience design, and the intersection of technology and business strategy. I enjoy staying current with industry trends and exploring how new technologies can solve existing challenges.
 
 ### What's Next
 
-Describe your career goals and what type of opportunities you're seeking. This helps visitors understand how they might work with you or whether you'd be a good fit for their organization.
+I'm seeking opportunities in product management, product analytics, or related roles where I can apply my technical skills and strategic thinking to build meaningful digital products. I'm particularly interested in companies that value data-driven decision making and user-centered design.
+
+I'm excited to contribute to teams that are building innovative solutions and making a positive impact through technology.
