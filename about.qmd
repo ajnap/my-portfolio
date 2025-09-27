@@ -17,7 +17,7 @@ title: "About Alex Napierski"
   <a href="https://www.linkedin.com/in/alex-napierski/" class="btn-contact" target="_blank">
     <i class="fab fa-linkedin"></i> LinkedIn
   </a>
-  <a href="https://github.com/ajnap3" class="btn-contact" target="_blank">
+  <a href="https://github.com/ajnap" class="btn-contact" target="_blank">
     <i class="fab fa-github"></i> GitHub
   </a>
 </div>

@@ -672,8 +672,39 @@ iframe:hover {
   flex-wrap: wrap;
 }
 
+/* Fix for container and card spacing */
+.quarto-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+  overflow-x: visible; /* Ensure no horizontal cutoff */
+}
+
+main {
+  padding: var(--spacing-lg) 0 var(--spacing-xxl);
+  min-height: calc(100vh - 200px);
+  overflow-x: visible; /* Prevent horizontal cutoff */
+}
+
+/* Ensure cards don't get cut off */
+.card {
+  background: var(--primary-white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+  box-shadow: 0 2px 8px var(--shadow-light);
+  transition: all 0.3s ease;
+  width: 100%; /* Ensure full width */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
 /* Enhanced Mobile Experience */
 @media (max-width: 576px) {
+  .quarto-container {
+    padding: 0 var(--spacing-sm); /* Reduce padding on mobile */
+  }
+
   .hero-banner h1 {
     font-size: 1.75rem;
   }
@@ -698,6 +729,11 @@ iframe:hover {
   .d-flex.justify-content-center {
     flex-direction: column;
     align-items: center;
+  }
+
+  .card {
+    margin: 0 0 var(--spacing-lg) 0; /* Remove side margins on mobile */
+    padding: var(--spacing-md); /* Reduce padding on mobile */
   }
 }
 
