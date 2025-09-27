@@ -14,9 +14,6 @@ title: "About Alex Napierski"
   <a href="mailto:ajnap3@byu.edu" class="btn-contact">
     <i class="fas fa-envelope"></i> ajnap3@byu.edu
   </a>
-  <a href="files/2025_Resume_Alex_Napierski_full.pdf" class="btn-contact" download>
-    <i class="fas fa-download"></i> Download Resume
-  </a>
   <a href="https://www.linkedin.com/in/alex-napierski/" class="btn-contact" target="_blank">
     <i class="fab fa-linkedin"></i> LinkedIn
   </a>
@@ -29,9 +26,13 @@ title: "About Alex Napierski"
 
 <hr class="section-divider">
 
-## Background
+## About Me
 
 ::: {.card}
+<div class="card-header">
+  <h3><i class="fas fa-user"></i> Background</h3>
+</div>
+
 I'm a Strategic Management student at BYU's Marriott School of Business with a passion for healthcare innovation and digital solutions. My unique combination of business strategy, healthcare leadership, and technical skills allows me to bridge the gap between strategic vision and practical implementation.
 
 Currently maintaining a **3.97 GPA** while leading multiple initiatives across healthcare, product development, and student organizations. I believe in leveraging data-driven insights and strategic thinking to create meaningful impact in healthcare and technology sectors.

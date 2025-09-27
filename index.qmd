@@ -25,9 +25,6 @@ title: "Welcome to Alex Napierski's Portfolio"
   <a href="mailto:ajnap3@byu.edu" class="btn-contact">
     <i class="fas fa-envelope"></i> ajnap3@byu.edu
   </a>
-  <a href="files/2025_Resume_Alex_Napierski_full.pdf" class="btn-contact" download>
-    <i class="fas fa-download"></i> Download Resume
-  </a>
 </div>
 
 :::
