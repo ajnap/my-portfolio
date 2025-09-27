@@ -6,7 +6,8 @@ website:
   title: "Alex Napierski - Portfolio"
   favicon: images/favicon.png
   navbar:
-    background: primary
+    background: light
+    title: "Alex Napierski"
     left:
       - href: index.qmd
         text: Home

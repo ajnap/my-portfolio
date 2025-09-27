@@ -8,108 +8,197 @@ title: "About Alex Napierski"
 
 <h1>Alex Napierski</h1>
 
-<a href="https://www.linkedin.com/in/alex-napierski/" class="btn btn-outline-primary btn-sm" target="_blank">
-  <i class="fab fa-linkedin"></i> LinkedIn
-</a>
-<a href="https://github.com/ajnap3" class="btn btn-outline-primary btn-sm" target="_blank">
-  <i class="fab fa-github"></i> GitHub
-</a>
+<p class="lead">Strategic Management | Healthcare Innovation | BYU Marriott School</p>
+
+<div class="contact-buttons">
+  <a href="mailto:ajnap3@byu.edu" class="btn-contact">
+    <i class="fas fa-envelope"></i> ajnap3@byu.edu
+  </a>
+  <a href="files/2025_Resume_Alex_Napierski_full.pdf" class="btn-contact" download>
+    <i class="fas fa-download"></i> Download Resume
+  </a>
+  <a href="https://www.linkedin.com/in/alex-napierski/" class="btn-contact" target="_blank">
+    <i class="fab fa-linkedin"></i> LinkedIn
+  </a>
+  <a href="https://github.com/ajnap3" class="btn-contact" target="_blank">
+    <i class="fab fa-github"></i> GitHub
+  </a>
+</div>
 
 :::
 
+<hr class="section-divider">
+
 ## Background
 
+::: {.card}
 I'm a Strategic Management student at BYU's Marriott School of Business with a passion for healthcare innovation and digital solutions. My unique combination of business strategy, healthcare leadership, and technical skills allows me to bridge the gap between strategic vision and practical implementation.
 
-Currently maintaining a 3.97 GPA while leading multiple initiatives across healthcare, product development, and student organizations. I believe in leveraging data-driven insights and strategic thinking to create meaningful impact in healthcare and technology sectors.
+Currently maintaining a **3.97 GPA** while leading multiple initiatives across healthcare, product development, and student organizations. I believe in leveraging data-driven insights and strategic thinking to create meaningful impact in healthcare and technology sectors.
+:::
 
-### Education
+## Education
 
-- **Bachelor of Science: Strategic Management**, Brigham Young University (April 2027)
+::: {.card}
+<div class="card-header">
+  <h3><i class="fas fa-graduation-cap"></i> Academic Excellence</h3>
+</div>
+
+**Bachelor of Science: Strategic Management**
+*Brigham Young University • April 2027*
+
 - **Minor**: Healthcare Leadership
-- **GPA**: 3.97/4.00
-- **Scholarships**: Academic Scholarship, Regents Scholarship, Parker Overly Scholarship, US STEM Scholarship
-- **Program Recognition**: Accepted into BYU's Strategic Management program (32% admission rate)
-- **Organizations**: Corporate Strategy Association, Management Consulting Association, Healthcare Leadership Association, BYU Language Interpreters Club
+- **GPA**: 3.97/4.00 (Dean's List - Top 5%)
+- **Program Recognition**: Accepted into Strategic Management program (32% admission rate)
 
-### Professional Experience
+**Scholarships & Awards**
+- Academic Scholarship ('24-'26)
+- Regents Scholarship
+- Parker Overly Scholarship
+- US STEM Scholarship
 
-#### Healthcare Employer Relations & Career Specialist
-*Project/Research Assistant | August 2024 - Present*
+**Organizations**
+- Corporate Strategy Association
+- Management Consulting Association
+- Healthcare Leadership Association
+- BYU Language Interpreters Club
+:::
+
+## Professional Experience
+
+::: {.experience-card .card}
+<div class="experience-header">
+  <h4 class="experience-title">Healthcare Employer Relations & Career Specialist</h4>
+  <span class="experience-date">August 2024 - Present</span>
+</div>
+<div class="experience-company">BYU Marriott School | Project/Research Assistant</div>
 
 - Pioneering research for inaugural 2025 Big XII Healthcare Leadership Case Competition & Student Summit
-- Coordinated outreach to 100+ industry leaders, driving 200% increase in student placement opportunities
+- Coordinated outreach to 100+ industry leaders, driving **200% increase** in student placement opportunities
 - Organized Business in Healthcare Career Fair connecting 28 employers with 200+ students
-- Enhanced Healthcare Mentorship Program, increasing student-mentor match success rate by 250%
+- Enhanced Healthcare Mentorship Program, increasing student-mentor match success rate by **250%**
+:::
 
-#### Product Innovation Intern | Replay (AI-Powered Sales Training)
-*March 2024 - June 2024*
+::: {.experience-card .card}
+<div class="experience-header">
+  <h4 class="experience-title">Product Innovation Intern</h4>
+  <span class="experience-date">March 2024 - June 2024</span>
+</div>
+<div class="experience-company">Replay (AI-Powered Sales Training Solutions) | Orem, UT</div>
 
-- Developed strategic buyer identification process, driving 5x increase in potential product buyers
+- Developed strategic buyer identification process, driving **5x increase** in potential product buyers
 - Led product testing sessions, uncovering key user insights for enhanced market readiness
 - Applied product management principles to refine launch systems and user experience
+:::
 
-#### Assistant Coordinator | FSY
-*May 2024 - August 2024*
+::: {.experience-card .card}
+<div class="experience-header">
+  <h4 class="experience-title">Assistant Coordinator</h4>
+  <span class="experience-date">May 2024 - August 2024</span>
+</div>
+<div class="experience-company">FSY | Santa Barbara, CA</div>
 
 - Trained and supervised 10+ counselors weekly, fostering high-performing team environment
-- Led 5+ large-scale events for 2000+ youth participants focused on inclusion and unity
+- Led 5+ large-scale events for **2000+ youth participants** focused on inclusion and unity
+:::
 
-#### Infield Mentor | Missionary Training Center
-*August 2023 - April 2024*
+::: {.experience-card .card}
+<div class="experience-header">
+  <h4 class="experience-title">Infield Mentor</h4>
+  <span class="experience-date">August 2023 - April 2024</span>
+</div>
+<div class="experience-company">Missionary Training Center | Provo, UT</div>
 
 - Coached 20+ representatives weekly on goal-setting and networking skills
-- Achieved 20% improvement in key indicator scores through personalized mentorship
+- Achieved **20% improvement** in key indicator scores through personalized mentorship
 - Developed feedback-driven coaching strategies for high-stress environments
+:::
 
-### Leadership & Service
+## Leadership & Service
 
-#### Lead Ambassador | Healthcare Leadership Association
-*July 2024 - Present*
+::: {.experience-card .card}
+<div class="experience-header">
+  <h4 class="experience-title">Lead Ambassador</h4>
+  <span class="experience-date">July 2024 - Present</span>
+</div>
+<div class="experience-company">Healthcare Leadership Association | BYU</div>
 
-- Engage with 100+ students weekly, driving 150% increase in club participation
+- Engage with 100+ students weekly, driving **150% increase** in club participation
 - Scaled expansion efforts to reach 500+ business students while managing team of 8 leaders
+:::
 
-#### Patient Experience Volunteer | Intermountain Health (UVH)
-*September 2024 - Present*
+::: {.experience-card .card}
+<div class="experience-header">
+  <h4 class="experience-title">Patient Experience Volunteer</h4>
+  <span class="experience-date">September 2024 - Present</span>
+</div>
+<div class="experience-company">Intermountain Health (UVH) | Provo, UT</div>
 
-- Enhance experience for 1,000+ visitors, patients, and staff in hospital environment
+- Enhance experience for **1,000+ visitors, patients, and staff** in hospital environment
 - Provide translation services to improve patient communication for diverse populations
+:::
 
-#### Full-time Representative | The Church of Jesus Christ of Latter-day Saints
-*August 2021 - July 2023*
+::: {.experience-card .card}
+<div class="experience-header">
+  <h4 class="experience-title">Full-time Representative</h4>
+  <span class="experience-date">August 2021 - July 2023</span>
+</div>
+<div class="experience-company">The Church of Jesus Christ of Latter-day Saints | Ecuador & Washington DC</div>
 
-- Mentored 150+ volunteers across Ecuador & Washington DC
-- Contributed 350+ hours of service to indigenous communities in Ecuador
+- Mentored **150+ volunteers** across Ecuador & Washington DC
+- Contributed **350+ hours** of service to indigenous communities in Ecuador
 - Developed cross-cultural communication skills through 8+ hours daily interaction
+:::
 
-### Skills & Achievements
+## Skills & Achievements
 
-**Technical & Analytical Skills**
-- Data Analytics: Tableau, SQL, Python, Excel, VBA, Pivot Tables
-- Advanced Analysis: Profit Optimization, Geospatial Analysis, Conjoint Analysis
-- Web Development: HTML/CSS, JavaScript, GitHub, Vercel, Quarto
-- Strategic Analysis: Case studies for Tesla, Walmart, Apple, Google, Dominos, Airbnb, Skullcandy
+<div class="skills-grid">
 
-**Leadership & Communication**
-- Bilingual: Spanish proficiency (certified by Rosetta Stone)
-- International Experience: Studied health systems across 8 European countries
-- Team Management: Led teams ranging from 8-20+ individuals
-- Cross-cultural Communication: 2+ years international experience
+::: {.skill-category}
+### <i class="fas fa-chart-line"></i> Technical & Analytical Skills
+<ul class="skill-list">
+<li>Data Analytics: Tableau, SQL, Python, Excel, VBA</li>
+<li>Advanced Analysis: Profit Optimization, Geospatial Analysis, Conjoint Analysis</li>
+<li>Web Development: HTML/CSS, JavaScript, GitHub, Vercel, Quarto</li>
+<li>Strategic Analysis: Case studies for Tesla, Walmart, Apple, Google, Dominos, Airbnb, Skullcandy</li>
+</ul>
+:::
 
-**Academic & Personal Achievements**
-- Academic Honors & Dean's List (top 5% of College of Life Sciences)
-- Research: Currently providing wheelchairs for underprivileged children in Ecuador
-- Service Leadership: Led projects for children in Honduras and refugee winter supply drives
-- Sports: Tennis Academic All-State Award, Freshman Basketball Team Captain
-- Personal: Twin, 3rd of 12 children, first Napierski to earn Eagle Scout Award
+::: {.skill-category}
+### <i class="fas fa-users"></i> Leadership & Communication
+<ul class="skill-list">
+<li>Bilingual: Spanish proficiency (certified by Rosetta Stone)</li>
+<li>International Experience: Studied health systems across 8 European countries</li>
+<li>Team Management: Led teams ranging from 8-20+ individuals</li>
+<li>Cross-cultural Communication: 2+ years international experience</li>
+</ul>
+:::
 
-### What's Next
+::: {.skill-category}
+### <i class="fas fa-trophy"></i> Academic & Personal Achievements
+<ul class="skill-list">
+<li>Academic Honors & Dean's List (top 5% of College of Life Sciences)</li>
+<li>Research: Currently providing wheelchairs for underprivileged children in Ecuador</li>
+<li>Service Leadership: Led projects for children in Honduras and refugee winter supply drives</li>
+<li>Sports: Tennis Academic All-State Award, Freshman Basketball Team Captain</li>
+<li>Personal: Twin, 3rd of 12 children, first Napierski to earn Eagle Scout Award</li>
+</ul>
+:::
+
+</div>
+
+## What's Next
+
+::: {.card}
+<div class="card-header">
+  <h3><i class="fas fa-rocket"></i> Career Aspirations</h3>
+</div>
 
 I'm seeking opportunities in healthcare innovation, strategic management, and product development where I can apply my unique combination of business strategy, healthcare leadership, and technical skills. I'm particularly passionate about:
 
-- **Healthcare Technology**: Improving patient experiences through digital solutions
-- **Strategic Consulting**: Solving complex business challenges with data-driven insights
-- **Product Management**: Building solutions that create meaningful impact for users
+- **<i class="fas fa-heartbeat"></i> Healthcare Technology**: Improving patient experiences through digital solutions
+- **<i class="fas fa-chess"></i> Strategic Consulting**: Solving complex business challenges with data-driven insights
+- **<i class="fas fa-cogs"></i> Product Management**: Building solutions that create meaningful impact for users
 
 I'm excited to contribute to organizations that value strategic thinking, innovation, and making a positive difference in people's lives.
+:::
