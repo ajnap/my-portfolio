@@ -19,51 +19,97 @@ title: "About Alex Napierski"
 
 ## Background
 
-I'm a passionate product management and analytics student with a strong foundation in building digital solutions that solve real-world problems. My journey combines technical skills with strategic thinking, allowing me to bridge the gap between user needs and technical implementation.
+I'm a Strategic Management student at BYU's Marriott School of Business with a passion for healthcare innovation and digital solutions. My unique combination of business strategy, healthcare leadership, and technical skills allows me to bridge the gap between strategic vision and practical implementation.
 
-Through my coursework and projects, I've developed expertise in product development, data analysis, and user experience design. I believe in the power of data-driven decision making and user-centered design to create products that truly make a difference.
+Currently maintaining a 3.97 GPA while leading multiple initiatives across healthcare, product development, and student organizations. I believe in leveraging data-driven insights and strategic thinking to create meaningful impact in healthcare and technology sectors.
 
 ### Education
 
-- **Product Management & Analytics Program**, Brigham Young University (Current)
-- **Relevant Coursework**: Product Strategy, Data Analytics, User Experience Design, Business Intelligence, Software Development
-- **Academic Focus**: Digital product development, data-driven decision making, and strategic product management
+- **Bachelor of Science: Strategic Management**, Brigham Young University (April 2027)
+- **Minor**: Healthcare Leadership
+- **GPA**: 3.97/4.00
+- **Scholarships**: Academic Scholarship, Regents Scholarship, Parker Overly Scholarship, US STEM Scholarship
+- **Program Recognition**: Accepted into BYU's Strategic Management program (32% admission rate)
+- **Organizations**: Corporate Strategy Association, Management Consulting Association, Healthcare Leadership Association, BYU Language Interpreters Club
 
-### Experience
+### Professional Experience
 
-#### Student Product Developer
-*2024 - Present*
+#### Healthcare Employer Relations & Career Specialist
+*Project/Research Assistant | August 2024 - Present*
 
-- Built and deployed interactive web applications using modern development frameworks
-- Collaborated with development teams to deliver user-focused digital solutions
-- Applied product management principles to guide feature development and user experience decisions
+- Pioneering research for inaugural 2025 Big XII Healthcare Leadership Case Competition & Student Summit
+- Coordinated outreach to 100+ industry leaders, driving 200% increase in student placement opportunities
+- Organized Business in Healthcare Career Fair connecting 28 employers with 200+ students
+- Enhanced Healthcare Mentorship Program, increasing student-mentor match success rate by 250%
 
-#### Project Portfolio
-*Academic & Personal Projects*
+#### Product Innovation Intern | Replay (AI-Powered Sales Training)
+*March 2024 - June 2024*
 
-- Developed full-stack applications with emphasis on user experience and technical excellence
-- Created data visualization and analytics dashboards for business insights
-- Implemented agile development practices and version control workflows
+- Developed strategic buyer identification process, driving 5x increase in potential product buyers
+- Led product testing sessions, uncovering key user insights for enhanced market readiness
+- Applied product management principles to refine launch systems and user experience
 
-### Skills & Interests
+#### Assistant Coordinator | FSY
+*May 2024 - August 2024*
 
-**Technical Skills**
-- Programming languages (JavaScript, Python, HTML/CSS)
-- Development tools (GitHub, Vercel, Quarto, Claude Code)
-- Analytics and visualization (data analysis, web analytics)
-- Product management tools (project planning, user research, wireframing)
+- Trained and supervised 10+ counselors weekly, fostering high-performing team environment
+- Led 5+ large-scale events for 2000+ youth participants focused on inclusion and unity
 
-**Soft Skills**
-- Strategic product thinking and problem-solving
-- Cross-functional collaboration and communication
-- User-centered design and research
-- Data-driven decision making
+#### Infield Mentor | Missionary Training Center
+*August 2023 - April 2024*
 
-**Interests**
-Beyond product development, I'm passionate about emerging technologies, user experience design, and the intersection of technology and business strategy. I enjoy staying current with industry trends and exploring how new technologies can solve existing challenges.
+- Coached 20+ representatives weekly on goal-setting and networking skills
+- Achieved 20% improvement in key indicator scores through personalized mentorship
+- Developed feedback-driven coaching strategies for high-stress environments
+
+### Leadership & Service
+
+#### Lead Ambassador | Healthcare Leadership Association
+*July 2024 - Present*
+
+- Engage with 100+ students weekly, driving 150% increase in club participation
+- Scaled expansion efforts to reach 500+ business students while managing team of 8 leaders
+
+#### Patient Experience Volunteer | Intermountain Health (UVH)
+*September 2024 - Present*
+
+- Enhance experience for 1,000+ visitors, patients, and staff in hospital environment
+- Provide translation services to improve patient communication for diverse populations
+
+#### Full-time Representative | The Church of Jesus Christ of Latter-day Saints
+*August 2021 - July 2023*
+
+- Mentored 150+ volunteers across Ecuador & Washington DC
+- Contributed 350+ hours of service to indigenous communities in Ecuador
+- Developed cross-cultural communication skills through 8+ hours daily interaction
+
+### Skills & Achievements
+
+**Technical & Analytical Skills**
+- Data Analytics: Tableau, SQL, Python, Excel, VBA, Pivot Tables
+- Advanced Analysis: Profit Optimization, Geospatial Analysis, Conjoint Analysis
+- Web Development: HTML/CSS, JavaScript, GitHub, Vercel, Quarto
+- Strategic Analysis: Case studies for Tesla, Walmart, Apple, Google, Dominos, Airbnb, Skullcandy
+
+**Leadership & Communication**
+- Bilingual: Spanish proficiency (certified by Rosetta Stone)
+- International Experience: Studied health systems across 8 European countries
+- Team Management: Led teams ranging from 8-20+ individuals
+- Cross-cultural Communication: 2+ years international experience
+
+**Academic & Personal Achievements**
+- Academic Honors & Dean's List (top 5% of College of Life Sciences)
+- Research: Currently providing wheelchairs for underprivileged children in Ecuador
+- Service Leadership: Led projects for children in Honduras and refugee winter supply drives
+- Sports: Tennis Academic All-State Award, Freshman Basketball Team Captain
+- Personal: Twin, 3rd of 12 children, first Napierski to earn Eagle Scout Award
 
 ### What's Next
 
-I'm seeking opportunities in product management, product analytics, or related roles where I can apply my technical skills and strategic thinking to build meaningful digital products. I'm particularly interested in companies that value data-driven decision making and user-centered design.
+I'm seeking opportunities in healthcare innovation, strategic management, and product development where I can apply my unique combination of business strategy, healthcare leadership, and technical skills. I'm particularly passionate about:
 
-I'm excited to contribute to teams that are building innovative solutions and making a positive impact through technology.
+- **Healthcare Technology**: Improving patient experiences through digital solutions
+- **Strategic Consulting**: Solving complex business challenges with data-driven insights
+- **Product Management**: Building solutions that create meaningful impact for users
+
+I'm excited to contribute to organizations that value strategic thinking, innovation, and making a positive difference in people's lives.

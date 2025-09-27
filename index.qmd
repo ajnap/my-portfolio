@@ -8,7 +8,7 @@ title: "Welcome to Alex Napierski's Portfolio"
 
 <h1>Alex Napierski</h1>
 
-<p class="lead mb-4">Product Management & Analytics Student | Building Digital Solutions</p>
+<p class="lead mb-4">Strategic Management Student | Healthcare Innovation | 3.97 GPA</p>
 
 <a href="https://www.linkedin.com/in/alex-napierski/" class="btn btn-outline-primary btn-sm" target="_blank">
   <i class="fab fa-linkedin"></i> LinkedIn
