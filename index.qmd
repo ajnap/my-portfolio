@@ -1,5 +1,5 @@
 ---
-title: "Welcome to Alex Napierski's Portfolio"
+title: "Welcome to My Portfolio"
 ---
 
 ::: {.hero-banner .text-center}
@@ -8,7 +8,7 @@ title: "Welcome to Alex Napierski's Portfolio"
 
 <h1>Alex Napierski</h1>
 
-<p class="lead mb-3">Strategic Management Student | Healthcare Innovation | 3.97 GPA</p>
+<p class="lead mb-3">Strategic Management Student | Healthcare Innovation | Learner</p>
 
 <p class="hero-tagline">∙ Aspiring Leader & Entrepreneur ∙ Dedicated to do something exciting & important ∙</p>
 

@@ -1,0 +1,153 @@
+---
+title: "About Me"
+---
+
+::: {.hero-banner .text-center}
+
+<img src="images/profile.jpg" alt="Alex Napierski" class="rounded-circle mb-3" width="160">
+
+<h1>Alex Napierski</h1>
+
+<p class="lead">Strategic Thinker | Global Explorer | Adventure Enthusiast</p>
+
+<p class="hero-tagline">∙ Bringing diverse perspectives to business challenges ∙</p>
+
+:::
+
+<hr class="section-divider">
+
+## Beyond the Classroom 🌍
+
+::: {.card}
+<div class="card-header">
+  <h3><i class="fas fa-mountain"></i> A Different Perspective on Leadership</h3>
+</div>
+
+While I'm passionate about strategic management and healthcare innovation, I've always believed that some of the best learning happens outside the classroom. I love seeking out new challenges and experiences that push me to grow, whether that's academically, personally, or just for the pure adventure of it.
+
+This past summer, I was incredibly fortunate to travel to **9 different countries** studying various health systems and populations. What started as an academic opportunity turned into one of the most eye-opening experiences of my life. I learned so much about different approaches to healthcare, but honestly, the cultural experiences and adventures along the way taught me just as much about myself.
+:::
+
+## International Experiences 🏔️
+
+<div class="row">
+<div class="col-md-6">
+
+::: {.card}
+<img src="images/switzerland.jpg" alt="Paragliding in Switzerland" class="img-fluid rounded mb-3">
+<h4><i class="fas fa-parachute-box"></i> Switzerland: Taking the Leap</h4>
+I'll be honest—jumping off a mountain in Switzerland was terrifying! But there's something about pushing through that fear and trusting the process that was incredibly rewarding. Plus, the views were absolutely unreal.
+:::
+
+</div>
+<div class="col-md-6">
+
+::: {.card}
+<img src="images/norway.jpg" alt="Standing on a cliff in Norway" class="img-fluid rounded mb-3">
+<h4><i class="fas fa-mountain"></i> Norway: Finding My Edge</h4>
+Standing on this cliff in Norway was one of those moments where you feel incredibly small but also incredibly alive. Sometimes the best views really do come after the hardest climbs.
+:::
+
+</div>
+</div>
+
+<div class="row mt-4">
+<div class="col-md-4">
+
+::: {.card}
+<img src="images/norway2.jpg" alt="More Norway adventures" class="img-fluid rounded mb-3">
+<h4>🇳🇴 Norway: Simply Breathtaking</h4>
+The fjords in Norway were unlike anything I'd ever seen. I spent hours just sitting and taking it all in—definitely one of those travel moments that stays with you forever.
+:::
+
+</div>
+<div class="col-md-4">
+
+::: {.card}
+<img src="images/italy.jpg" alt="Italy adventures" class="img-fluid rounded mb-3">
+<h4>🇮🇹 Italy: La Dolce Vita</h4>
+Italy completely won me over. Between the incredible food, amazing people, and rich history, I could have stayed for months. I definitely practiced my Italian more than I studied healthcare systems some days!
+:::
+
+</div>
+<div class="col-md-4">
+
+::: {.card}
+<img src="images/paris.jpg" alt="French Open in Paris" class="img-fluid rounded mb-3">
+<h4>🎾 France: Living the Dream</h4>
+Getting to the French Open was honestly a dream come true for this tennis fanatic. The atmosphere at Roland Garros was electric—I was like a kid in a candy store the entire time.
+:::
+
+</div>
+</div>
+
+## Personal Background & Achievements 🎯
+
+::: {.card}
+<div class="card-header">
+  <h3><i class="fas fa-lightbulb"></i> Personal & Professional Development</h3>
+</div>
+
+<div class="row">
+<div class="col-md-6">
+
+**Twin Life**
+Being a twin has been such a unique experience! My twin brother and I have always pushed each other to be better, whether that's in academics, sports, or just life in general. We're pretty competitive, but in the best way possible.
+
+**Big Family Energy**
+Growing up as the 3rd of **12 children** definitely keeps you on your toes! Family dinners are basically organized chaos, and you learn pretty quickly how to speak up and how to listen. It's taught me so much about working with different personalities and finding ways to bring people together.
+
+**Tennis and Basketball**
+I've been playing tennis since I was young and absolutely love it. Getting the Tennis Academic All-State Award was such an honor, and being Basketball Team Captain as a freshman taught me a lot about earning respect through hard work rather than just talking.
+
+</div>
+<div class="col-md-6">
+
+**Eagle Scout Achievement**
+I'm really proud to be the first in my family to earn Eagle Scout. It took a lot of dedication and taught me so much about following through on commitments and working with others toward a common goal.
+
+**Health Systems Study**
+Studying health systems across 9 European countries was fascinating. It was incredible to see how different cultures approach healthcare—some focused on efficiency, others on relationship-building with patients. Each country taught me something new.
+
+**Service Projects**
+One of the things I'm most passionate about is service work. I'm currently working on getting wheelchairs to kids in Ecuador, and I've done projects in Honduras too. There's something really fulfilling about being able to help in a practical, tangible way.
+
+</div>
+</div>
+:::
+
+## Family Foundation 👨‍👩‍👧‍👦
+
+::: {.card}
+<img src="images/family.jpg" alt="Alex with his family" class="img-fluid rounded mb-3">
+
+With **11 siblings**, life is never quiet! But honestly, I wouldn't have it any other way. We're all really close and incredibly supportive of each other. Our family has always emphasized hard work, serving others, and chasing after meaningful goals—even if they seem a little crazy sometimes.
+
+Growing up in such a big family has taught me that everyone has something valuable to contribute, and the best decisions usually come when you take time to really listen to different perspectives.
+:::
+
+## Professional Philosophy 🚀
+
+::: {.card}
+<div class="card-header">
+  <h3><i class="fas fa-heart"></i> Leadership Approach</h3>
+</div>
+
+I'm still figuring out exactly where my career will take me, but I know I want to work on things that matter—especially in healthcare where I can help make a real difference in people's lives. I've learned that some of my best insights come from unexpected places, whether that's from a conversation with a patient in a European hospital or from pushing through a challenging hike in Norway.
+
+I think curiosity and humility are probably my biggest assets. I genuinely love learning from other people, and I've found that staying curious and being willing to admit when you don't know something usually leads to the most interesting discoveries.
+
+My goal is to build a career where I can combine my love for problem-solving with my desire to serve others, and hopefully have some great adventures along the way.
+:::
+
+<div class="text-center mt-4">
+  <a href="mailto:ajnap3@byu.edu" class="btn-contact">
+    <i class="fas fa-envelope"></i> Let's Connect!
+  </a>
+  <a href="https://www.linkedin.com/in/alex-napierski/" class="btn-contact" target="_blank">
+    <i class="fab fa-linkedin"></i> LinkedIn
+  </a>
+  <a href="https://github.com/ajnap" class="btn-contact" target="_blank">
+    <i class="fab fa-github"></i> GitHub
+  </a>
+</div>

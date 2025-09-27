@@ -11,8 +11,10 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: aboutme.qmd
+        text: About Me
       - href: about.qmd
-        text: About
+        text: Resume
       - text: Projects
         menu:
           - href: projects/project-1.qmd
