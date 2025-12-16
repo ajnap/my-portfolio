@@ -329,6 +329,9 @@
     .about__text-full {
       max-width: 800px;
       margin-bottom: 60px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
     }
 
     .about__text-full p {
@@ -336,6 +339,10 @@
       line-height: 1.8;
       margin-bottom: 24px;
       color: var(--color-gray-700);
+    }
+
+    .about__skills {
+      justify-content: center;
     }
 
     /* Travel Photo Gallery */
@@ -797,6 +804,81 @@
     }
 
     /* ─────────────────────────────────────────────────────────────────────────
+       Life Learnings Section
+       ───────────────────────────────────────────────────────────────────────── */
+    .learnings__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .learning-card {
+      display: flex;
+      background: var(--color-white);
+      border: 1px solid var(--color-gray-100);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .learning-card:hover {
+      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+      transform: translateY(-4px);
+    }
+
+    .learning-card__image {
+      width: 140px;
+      min-height: 180px;
+      flex-shrink: 0;
+    }
+
+    .learning-card__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .learning-card__content {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .learning-card__quote {
+      font-size: 16px;
+      font-style: italic;
+      color: var(--color-gray-700);
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .learning-card__author {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--color-black);
+    }
+
+    .learning-card__title {
+      font-size: 13px;
+      color: var(--color-gray-500);
+      margin-top: 2px;
+    }
+
+    @media (max-width: 500px) {
+      .learning-card {
+        flex-direction: column;
+      }
+
+      .learning-card__image {
+        width: 100%;
+        height: 200px;
+      }
+    }
+
+    /* ─────────────────────────────────────────────────────────────────────────
        Contact Section
        ───────────────────────────────────────────────────────────────────────── */
     .contact {
@@ -991,6 +1073,7 @@
             <li><a href="#resume" class="header__nav-link">Resume</a></li>
             <li><a href="#projects" class="header__nav-link">Projects</a></li>
             <li><a href="#testimonials" class="header__nav-link">Testimonials</a></li>
+            <li><a href="#learnings" class="header__nav-link">Life Learnings</a></li>
             <li><a href="#contact" class="header__nav-link">Contact</a></li>
           </ul>
 
@@ -1443,7 +1526,7 @@
           <p class="testimonial__text">
             His ability to lead with integrity and purpose inspired those around him. Alex is deeply compassionate and selfless, consistently ensuring that others feel included, supported, and valued.
           </p>
-          <p class="testimonial__author">Tracy Skousen</p>
+          <p class="testimonial__author">Tracy S.</p>
           <p class="testimonial__title">CEO & Founder, Successful Leaders LLC</p>
         </div>
 
@@ -1452,8 +1535,34 @@
           <p class="testimonial__text">
             Alex is clearly a very strong and gifted student—humble, eager to learn, and genuinely kind. His friendly and caring nature fosters a positive environment in any setting.
           </p>
-          <p class="testimonial__author">Dr. Timothy Gubler</p>
+          <p class="testimonial__author">Dr. Tim G.</p>
           <p class="testimonial__title">Associate Professor of Strategy, BYU Marriott</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       LIFE LEARNINGS
+       ═══════════════════════════════════════════════════════════════════════ -->
+  <section id="learnings" class="section">
+    <div class="container">
+      <div class="section__header" style="text-align: center;">
+        <p class="section__label">Life Learnings</p>
+        <h2 class="section__title">Wisdom from Incredible People</h2>
+        <p style="color: var(--color-gray-500); max-width: 600px; margin: 16px auto 0;">Lessons from remarkable individuals I've been fortunate to meet along the way.</p>
+      </div>
+
+      <div class="learnings__grid">
+        <div class="learning-card">
+          <div class="learning-card__image">
+            <img src="images/dwayne-wade.jpg" alt="Dwayne Wade">
+          </div>
+          <div class="learning-card__content">
+            <p class="learning-card__quote">"You have to choose greatness everyday; it's an EVERY day thing."</p>
+            <p class="learning-card__author">Dwayne Wade</p>
+            <p class="learning-card__title">NBA Legend, 3x NBA Champion</p>
+          </div>
         </div>
       </div>
     </div>
