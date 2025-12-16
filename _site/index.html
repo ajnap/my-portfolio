@@ -1,0 +1,1498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Napierski — Strategy & Healthcare Innovation</title>
+  <meta name="description" content="Strategic Management student at BYU Marriott School of Business. Passionate about healthcare innovation, product development, and creating meaningful impact.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <style>
+    /* ═══════════════════════════════════════════════════════════════════════════
+       ALEX NAPIERSKI PORTFOLIO — Clean Minimal Design
+       Inspired by architect-cv template
+       ═══════════════════════════════════════════════════════════════════════════ */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --color-black: #1a1a1a;
+      --color-gray-900: #2d2d2d;
+      --color-gray-700: #4a4a4a;
+      --color-gray-500: #717171;
+      --color-gray-300: #a3a3a3;
+      --color-gray-100: #f5f5f5;
+      --color-white: #ffffff;
+      --color-accent: #e8f4fc;
+      --color-accent-dark: #b8d4e8;
+
+      --font-main: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --container-width: 1200px;
+      --section-padding: 100px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-main);
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--color-gray-700);
+      background-color: var(--color-white);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--color-black);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      max-width: var(--container-width);
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    /* ─────────────────────────────────────────────────────────────────────────
+       Header / Navigation
+       ───────────────────────────────────────────────────────────────────────── */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: var(--color-white);
+      border-bottom: 1px solid var(--color-gray-100);
+    }
+
+    .header__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+    }
+
+    .header__logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .header__logo-icon {
+      width: 32px;
+      height: 32px;
+      background: var(--color-black);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-white);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .header__logo-text {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--color-black);
+    }
+
+    .header__logo-subtitle {
+      font-size: 12px;
+      color: var(--color-gray-500);
+      margin-top: 2px;
+    }
+
+    .header__nav {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .header__nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .header__nav-link {
+      font-size: 14px;
+      color: var(--color-gray-500);
+      transition: color 0.2s ease;
+    }
+
+    .header__nav-link:hover {
+      color: var(--color-black);
+    }
+
+    .header__contact {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .header__contact-item {
+      font-size: 13px;
+      color: var(--color-gray-700);
+    }
+
+    .header__social {
+      display: flex;
+      gap: 16px;
+    }
+
+    .header__social a {
+      color: var(--color-gray-500);
+      font-size: 16px;
+    }
+
+    .header__social a:hover {
+      color: var(--color-black);
+    }
+
+    /* Mobile menu toggle */
+    .header__menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+    }
+
+    .header__menu-toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--color-black);
+      margin: 5px 0;
+      transition: 0.3s;
+    }
+
+    /* ─────────────────────────────────────────────────────────────────────────
+       Hero Section — Full Bleed Background
+       ───────────────────────────────────────────────────────────────────────── */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .hero__image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .hero__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+
+    .hero__scroll {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      color: var(--color-white);
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      z-index: 10;
+    }
+
+    .hero__scroll-line {
+      width: 1px;
+      height: 40px;
+      background: var(--color-white);
+      animation: scrollPulse 2s ease-in-out infinite;
+    }
+
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 1; transform: scaleY(1); }
+      50% { opacity: 0.5; transform: scaleY(0.8); }
+    }
+
+    /* ─────────────────────────────────────────────────────────────────────────
+       Section Styles
+       ───────────────────────────────────────────────────────────────────────── */
+    .section {
+      padding: var(--section-padding) 0;
+    }
+
+    .section--gray {
+      background: var(--color-gray-100);
+    }
+
+    .section__header {
+      margin-bottom: 60px;
+    }
+
+    .section__label {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--color-gray-500);
+      margin-bottom: 16px;
+    }
+
+    .section__title {
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--color-black);
+      line-height: 1.2;
+    }
+
+    /* ─────────────────────────────────────────────────────────────────────────
+       About Section
+       ───────────────────────────────────────────────────────────────────────── */
+    .about__content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .about__text p {
+      font-size: 17px;
+      line-height: 1.8;
+      margin-bottom: 24px;
+      color: var(--color-gray-700);
+    }
+
+    .about__skills-title {
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--color-black);
+      margin-bottom: 16px;
+      margin-top: 40px;
+    }
+
+    .about__skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill-tag {
+      padding: 8px 16px;
+      background: var(--color-accent);
+      color: var(--color-gray-700);
+      font-size: 13px;
+      font-weight: 500;
+      border-radius: 4px;
+    }
+
+    .about__image img {
+      border-radius: 8px;
+    }
+
+    .about__text-full {
+      max-width: 800px;
+      margin-bottom: 60px;
+    }
+
+    .about__text-full p {
+      font-size: 17px;
+      line-height: 1.8;
+      margin-bottom: 24px;
+      color: var(--color-gray-700);
+    }
+
+    /* Travel Photo Gallery */
+    .about__gallery {
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+
+    .about__gallery-title {
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--color-black);
+      margin-bottom: 12px;
+    }
+
+    .about__gallery-subtitle {
+      font-size: 16px;
+      color: var(--color-gray-500);
+      margin-bottom: 32px;
+      max-width: 600px;
+    }
+
+    .gallery__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto auto;
+      gap: 20px;
+    }
+
+    .gallery__item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      aspect-ratio: 4/3;
+    }
+
+    .gallery__item--large {
+      grid-row: span 2;
+      aspect-ratio: auto;
+    }
+
+    .gallery__item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .gallery__item:hover img {
+      transform: scale(1.05);
+    }
+
+    .gallery__caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 20px;
+      background: linear-gradient(transparent, rgba(0,0,0,0.8));
+      color: var(--color-white);
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery__item:hover .gallery__caption {
+      transform: translateY(0);
+    }
+
+    .gallery__flag {
+      font-size: 20px;
+      margin-right: 8px;
+    }
+
+    .gallery__location {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .gallery__desc {
+      font-size: 13px;
+      margin-top: 8px;
+      opacity: 0.9;
+      line-height: 1.4;
+    }
+
+    /* Personal Background Grid */
+    .about__personal {
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+
+    .personal__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .personal__item {
+      padding: 24px;
+      background: var(--color-gray-100);
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .personal__icon {
+      font-size: 32px;
+      display: block;
+      margin-bottom: 12px;
+    }
+
+    .personal__icon-fa {
+      font-size: 28px;
+      color: var(--color-accent-dark);
+      margin-bottom: 16px;
+    }
+
+    .personal__item h4 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--color-black);
+      margin-bottom: 8px;
+    }
+
+    .personal__item p {
+      font-size: 14px;
+      color: var(--color-gray-500);
+      line-height: 1.5;
+    }
+
+    /* Family Photo */
+    .about__family {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .about__family img {
+      width: 100%;
+      max-width: 900px;
+      border-radius: 8px;
+      margin: 0 auto 20px;
+    }
+
+    .about__family-caption {
+      font-size: 15px;
+      color: var(--color-gray-500);
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* ─────────────────────────────────────────────────────────────────────────
+       Resume Section
+       ───────────────────────────────────────────────────────────────────────── */
+    .resume__section {
+      margin-bottom: 48px;
+    }
+
+    .resume__section-title {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--color-black);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .resume__section-title i {
+      color: var(--color-accent-dark);
+    }
+
+    .resume__card {
+      padding: 28px;
+      background: var(--color-white);
+      border: 1px solid var(--color-gray-100);
+      border-radius: 8px;
+      margin-bottom: 16px;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .resume__card:hover {
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    }
+
+    .resume__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 4px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .resume__header h4 {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--color-black);
+    }
+
+    .resume__date {
+      font-size: 13px;
+      color: var(--color-gray-500);
+      font-weight: 500;
+    }
+
+    .resume__company {
+      font-size: 14px;
+      color: var(--color-gray-500);
+      margin-bottom: 12px;
+    }
+
+    .resume__list {
+      margin: 0;
+      padding-left: 20px;
+      color: var(--color-gray-700);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .resume__list li {
+      margin-bottom: 6px;
+    }
+
+    .resume__tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .resume__tag {
+      padding: 4px 12px;
+      background: var(--color-accent);
+      color: var(--color-gray-700);
+      font-size: 12px;
+      font-weight: 500;
+      border-radius: 4px;
+    }
+
+    .resume__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .resume__card--compact {
+      padding: 24px;
+    }
+
+    .resume__card--compact h4 {
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+
+    .resume__desc {
+      font-size: 14px;
+      color: var(--color-gray-500);
+      line-height: 1.6;
+      margin-top: 8px;
+    }
+
+    .skills__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .skills__category h4 {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--color-black);
+      margin-bottom: 12px;
+    }
+
+    .skills__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    /* ─────────────────────────────────────────────────────────────────────────
+       Milestones Section
+       ───────────────────────────────────────────────────────────────────────── */
+    .milestones__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    }
+
+    .milestone {
+      padding: 32px;
+      background: var(--color-white);
+      border: 1px solid var(--color-gray-100);
+      transition: all 0.3s ease;
+    }
+
+    .milestone:hover {
+      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+      transform: translateY(-4px);
+    }
+
+    .milestone__number {
+      font-size: 48px;
+      font-weight: 300;
+      color: var(--color-accent-dark);
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+
+    .milestone__date {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--color-gray-500);
+      margin-bottom: 8px;
+    }
+
+    .milestone__title {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--color-black);
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+
+    .milestone__desc {
+      font-size: 14px;
+      color: var(--color-gray-500);
+      line-height: 1.6;
+    }
+
+    /* ─────────────────────────────────────────────────────────────────────────
+       Projects Section
+       ───────────────────────────────────────────────────────────────────────── */
+    .projects__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    .project-card {
+      padding: 40px;
+      background: var(--color-white);
+      border: 1px solid var(--color-gray-100);
+      transition: all 0.3s ease;
+    }
+
+    .project-card:hover {
+      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+      transform: translateY(-4px);
+    }
+
+    .project-card--placeholder {
+      border-style: dashed;
+      background: var(--color-gray-100);
+    }
+
+    .project-card__number {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--color-gray-500);
+      margin-bottom: 16px;
+    }
+
+    .project-card__title {
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--color-black);
+      margin-bottom: 8px;
+    }
+
+    .project-card__role {
+      font-size: 14px;
+      color: var(--color-gray-500);
+      margin-bottom: 16px;
+    }
+
+    .project-card__desc {
+      font-size: 15px;
+      color: var(--color-gray-700);
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+
+    .project-card__tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .project-tag {
+      padding: 4px 12px;
+      background: var(--color-gray-100);
+      color: var(--color-gray-700);
+      font-size: 12px;
+      font-weight: 500;
+      border-radius: 4px;
+    }
+
+    .project-card__link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--color-black);
+    }
+
+    .project-card__link i {
+      transition: transform 0.2s ease;
+    }
+
+    .project-card__link:hover i {
+      transform: translateX(4px);
+    }
+
+    /* ─────────────────────────────────────────────────────────────────────────
+       Testimonials Section
+       ───────────────────────────────────────────────────────────────────────── */
+    .testimonials__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .testimonial {
+      padding: 40px;
+      background: var(--color-white);
+      border: 1px solid var(--color-gray-100);
+    }
+
+    .testimonial__quote {
+      font-size: 48px;
+      color: var(--color-accent-dark);
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+
+    .testimonial__text {
+      font-size: 16px;
+      font-style: italic;
+      color: var(--color-gray-700);
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+
+    .testimonial__author {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--color-black);
+    }
+
+    .testimonial__title {
+      font-size: 13px;
+      color: var(--color-gray-500);
+      margin-top: 4px;
+    }
+
+    /* ─────────────────────────────────────────────────────────────────────────
+       Contact Section
+       ───────────────────────────────────────────────────────────────────────── */
+    .contact {
+      text-align: center;
+      padding: 120px 0;
+    }
+
+    .contact__title {
+      font-size: 42px;
+      font-weight: 700;
+      color: var(--color-black);
+      margin-bottom: 16px;
+    }
+
+    .contact__subtitle {
+      font-size: 18px;
+      color: var(--color-gray-500);
+      margin-bottom: 40px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .contact__email {
+      font-size: 28px;
+      font-weight: 500;
+      color: var(--color-black);
+      margin-bottom: 40px;
+      display: inline-block;
+      border-bottom: 2px solid var(--color-accent-dark);
+      padding-bottom: 4px;
+    }
+
+    .contact__links {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+    }
+
+    .contact__link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 15px;
+      color: var(--color-gray-500);
+    }
+
+    .contact__link:hover {
+      color: var(--color-black);
+    }
+
+    /* ─────────────────────────────────────────────────────────────────────────
+       Footer
+       ───────────────────────────────────────────────────────────────────────── */
+    .footer {
+      padding: 40px 0;
+      border-top: 1px solid var(--color-gray-100);
+      text-align: center;
+    }
+
+    .footer__text {
+      font-size: 14px;
+      color: var(--color-gray-500);
+    }
+
+    /* ─────────────────────────────────────────────────────────────────────────
+       Responsive
+       ───────────────────────────────────────────────────────────────────────── */
+    @media (max-width: 1024px) {
+      .milestones__grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .testimonials__grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .gallery__grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .gallery__item--large {
+        grid-row: span 1;
+      }
+
+      .personal__grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .resume__grid {
+        grid-template-columns: 1fr;
+      }
+
+      .skills__grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .about__content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .about__image {
+        order: -1;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      .projects__grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      :root {
+        --section-padding: 60px;
+      }
+
+      .container {
+        padding: 0 24px;
+      }
+
+      .header__nav-links,
+      .header__contact {
+        display: none;
+      }
+
+      .header__menu-toggle {
+        display: block;
+      }
+
+      .section__title {
+        font-size: 28px;
+      }
+
+      .milestones__grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery__grid {
+        grid-template-columns: 1fr;
+      }
+
+      .personal__grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery__caption {
+        transform: translateY(0);
+        position: relative;
+        background: var(--color-gray-900);
+      }
+
+      .contact__title {
+        font-size: 32px;
+      }
+
+      .contact__email {
+        font-size: 20px;
+      }
+
+      .contact__links {
+        flex-direction: column;
+        gap: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       HEADER
+       ═══════════════════════════════════════════════════════════════════════ -->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="#" class="header__logo">
+          <div class="header__logo-icon">AN</div>
+          <div>
+            <div class="header__logo-text">Alex Napierski</div>
+            <div class="header__logo-subtitle">Strategy & Healthcare</div>
+          </div>
+        </a>
+
+        <nav class="header__nav">
+          <ul class="header__nav-links">
+            <li><a href="#about" class="header__nav-link">About</a></li>
+            <li><a href="#resume" class="header__nav-link">Resume</a></li>
+            <li><a href="#projects" class="header__nav-link">Projects</a></li>
+            <li><a href="#testimonials" class="header__nav-link">Testimonials</a></li>
+            <li><a href="#contact" class="header__nav-link">Contact</a></li>
+          </ul>
+
+          <div class="header__contact">
+            <a href="mailto:alexnap101@gmail.com" class="header__contact-item">alexnap101@gmail.com</a>
+            <span class="header__contact-item">(801) 420-7131</span>
+          </div>
+
+          <div class="header__social">
+            <a href="https://www.linkedin.com/in/alex-napierski/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/ajnap" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </nav>
+
+        <button class="header__menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       HERO — Full Bleed Background
+       ═══════════════════════════════════════════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero__image">
+      <img src="images/portfolio1.jpg" alt="Alex Napierski">
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       ABOUT
+       ═══════════════════════════════════════════════════════════════════════ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__label">About Me</p>
+        <h2 class="section__title">Building at the Intersection<br>of Strategy & Healthcare</h2>
+      </div>
+
+      <div class="about__text-full">
+        <p>
+          I'm a Strategic Management student at BYU's Marriott School of Business with a deep passion for healthcare innovation. My work bridges business strategy, data analytics, and product development—helping organizations solve complex problems and create meaningful change.
+        </p>
+        <p>
+          From pioneering the Big XII Healthcare Leadership Case Competition to driving 5x growth in buyer identification at an AI startup, I thrive at the intersection of strategic thinking and hands-on execution. My international experience studying health systems across 8 European countries has shaped my perspective on building inclusive, patient-centered solutions.
+        </p>
+
+        <h3 class="about__skills-title">I'm Good At</h3>
+        <div class="about__skills">
+          <span class="skill-tag">Strategy & Consulting</span>
+          <span class="skill-tag">Product Development</span>
+          <span class="skill-tag">Healthcare Innovation</span>
+          <span class="skill-tag">Data Analytics</span>
+          <span class="skill-tag">Leadership</span>
+          <span class="skill-tag">Cross-Cultural Communication</span>
+        </div>
+      </div>
+
+      <!-- Travel Photo Gallery -->
+      <div class="about__gallery">
+        <h3 class="about__gallery-title" style="text-align: center;">International Experiences</h3>
+        <p class="about__gallery-subtitle" style="text-align: center; margin-left: auto; margin-right: auto;">This past summer, I traveled to 9 different countries studying various health systems and populations—one of the most eye-opening experiences of my life.</p>
+
+        <div class="gallery__grid">
+          <div class="gallery__item gallery__item--large">
+            <img src="images/switzerland.jpg" alt="Paragliding in Switzerland">
+            <div class="gallery__caption">
+              <span class="gallery__flag">🇨🇭</span>
+              <span class="gallery__location">Switzerland</span>
+              <p class="gallery__desc">Taking the leap—jumping off a mountain was terrifying but incredibly rewarding.</p>
+            </div>
+          </div>
+          <div class="gallery__item">
+            <img src="images/norway.jpg" alt="Standing on a cliff in Norway">
+            <div class="gallery__caption">
+              <span class="gallery__flag">🇳🇴</span>
+              <span class="gallery__location">Norway</span>
+              <p class="gallery__desc">Finding my edge—feeling incredibly small but also incredibly alive.</p>
+            </div>
+          </div>
+          <div class="gallery__item">
+            <img src="images/norway2.jpg" alt="Norway fjords">
+            <div class="gallery__caption">
+              <span class="gallery__flag">🇳🇴</span>
+              <span class="gallery__location">Norway</span>
+              <p class="gallery__desc">The fjords were unlike anything I'd ever seen—simply breathtaking.</p>
+            </div>
+          </div>
+          <div class="gallery__item">
+            <img src="images/italy.jpg" alt="Italy adventures">
+            <div class="gallery__caption">
+              <span class="gallery__flag">🇮🇹</span>
+              <span class="gallery__location">Italy</span>
+              <p class="gallery__desc">La Dolce Vita—the food, people, and rich history completely won me over.</p>
+            </div>
+          </div>
+          <div class="gallery__item">
+            <img src="images/paris.jpg" alt="French Open in Paris">
+            <div class="gallery__caption">
+              <span class="gallery__flag">🇫🇷</span>
+              <span class="gallery__location">France</span>
+              <p class="gallery__desc">Dream come true—experiencing the French Open at Roland Garros.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Personal Background -->
+      <div class="about__personal">
+        <div class="personal__grid">
+          <div class="personal__item">
+            <i class="fas fa-users personal__icon-fa"></i>
+            <h4>Big Family Energy</h4>
+            <p>3rd of 12 children—family dinners are organized chaos, teaching me to work with different personalities and bring people together.</p>
+          </div>
+          <div class="personal__item">
+            <i class="fas fa-user-friends personal__icon-fa"></i>
+            <h4>Twin Life</h4>
+            <p>My twin brother and I have always pushed each other to be better in academics, sports, and life. We're competitive in the best way.</p>
+          </div>
+          <div class="personal__item">
+            <i class="fas fa-trophy personal__icon-fa"></i>
+            <h4>Tennis & Basketball</h4>
+            <p>Tennis Academic All-State Award recipient. Basketball Team Captain as a freshman—learning to earn respect through hard work.</p>
+          </div>
+          <div class="personal__item">
+            <i class="fas fa-award personal__icon-fa"></i>
+            <h4>Eagle Scout</h4>
+            <p>First in my family to earn Eagle Scout—teaching me about following through on commitments and working toward common goals.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Family Photo -->
+      <div class="about__family">
+        <img src="images/family.jpg" alt="Alex with his family">
+        <p class="about__family-caption">With 11 siblings, life is never quiet! Our family emphasizes hard work, serving others, and chasing meaningful goals.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       MILESTONES
+       ═══════════════════════════════════════════════════════════════════════ -->
+  <section id="milestones" class="section section--gray">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__label">The Journey</p>
+        <h2 class="section__title">Key Milestones</h2>
+      </div>
+
+      <div class="milestones__grid">
+        <div class="milestone">
+          <div class="milestone__number">01</div>
+          <p class="milestone__date">Expected 2027</p>
+          <h3 class="milestone__title">BYU Marriott School</h3>
+          <p class="milestone__desc">B.S. Strategic Management · 3.97 GPA · Phi Kappa Phi · Healthcare Leadership Minor</p>
+        </div>
+
+        <div class="milestone">
+          <div class="milestone__number">02</div>
+          <p class="milestone__date">2024 – Present</p>
+          <h3 class="milestone__title">VP, BYU Strategy Program</h3>
+          <p class="milestone__desc">Elected VP of Student Development, championing mentorship and building company pipelines.</p>
+        </div>
+
+        <div class="milestone">
+          <div class="milestone__number">03</div>
+          <p class="milestone__date">2024 – Present</p>
+          <h3 class="milestone__title">Healthcare Research Lead</h3>
+          <p class="milestone__desc">Pioneered inaugural Big XII Healthcare Case Competition, engaging 200+ students and 25+ executives.</p>
+        </div>
+
+        <div class="milestone">
+          <div class="milestone__number">04</div>
+          <p class="milestone__date">2024</p>
+          <h3 class="milestone__title">Product Innovation Intern</h3>
+          <p class="milestone__desc">Drove 5x increase in buyer identification at Replay AI through strategic process development.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       RESUME
+       ═══════════════════════════════════════════════════════════════════════ -->
+  <section id="resume" class="section">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__label">Resume</p>
+        <h2 class="section__title">Experience & Education</h2>
+      </div>
+
+      <!-- Education -->
+      <div class="resume__section">
+        <h3 class="resume__section-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+        <div class="resume__card">
+          <div class="resume__header">
+            <h4>Bachelor of Science: Strategic Management</h4>
+            <span class="resume__date">Expected April 2027</span>
+          </div>
+          <p class="resume__company">Brigham Young University · Marriott School of Business</p>
+          <ul class="resume__list">
+            <li><strong>Minor:</strong> Healthcare Leadership</li>
+            <li><strong>GPA:</strong> 3.97/4.00 (Dean's List - Top 5%)</li>
+            <li><strong>Program:</strong> Accepted into Strategic Management program (32% admission rate)</li>
+            <li><strong>Honors:</strong> Phi Kappa Phi Inductee</li>
+          </ul>
+          <div class="resume__tags">
+            <span class="resume__tag">Academic Scholarship ('24-'26)</span>
+            <span class="resume__tag">Regents Scholarship</span>
+            <span class="resume__tag">Parker Overly Scholarship</span>
+            <span class="resume__tag">US STEM Scholarship</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Professional Experience -->
+      <div class="resume__section">
+        <h3 class="resume__section-title"><i class="fas fa-briefcase"></i> Professional Experience</h3>
+
+        <div class="resume__card">
+          <div class="resume__header">
+            <h4>Healthcare Employer Relations & Career Specialist</h4>
+            <span class="resume__date">Aug 2024 - Present</span>
+          </div>
+          <p class="resume__company">BYU Marriott School · Project/Research Assistant</p>
+          <ul class="resume__list">
+            <li>Pioneering research for inaugural 2025 Big XII Healthcare Leadership Case Competition & Student Summit</li>
+            <li>Coordinated outreach to 100+ industry leaders, driving <strong>200% increase</strong> in student placement opportunities</li>
+            <li>Organized Business in Healthcare Career Fair connecting 28 employers with 200+ students</li>
+            <li>Enhanced Healthcare Mentorship Program, increasing student-mentor match success rate by <strong>250%</strong></li>
+          </ul>
+        </div>
+
+        <div class="resume__card">
+          <div class="resume__header">
+            <h4>Product Innovation Intern</h4>
+            <span class="resume__date">Mar 2024 - Jun 2024</span>
+          </div>
+          <p class="resume__company">Replay · AI-Powered Sales Training Solutions · Orem, UT</p>
+          <ul class="resume__list">
+            <li>Developed strategic buyer identification process, driving <strong>5x increase</strong> in potential product buyers</li>
+            <li>Led product testing sessions, uncovering key user insights for enhanced market readiness</li>
+            <li>Applied product management principles to refine launch systems and user experience</li>
+          </ul>
+        </div>
+
+        <div class="resume__card">
+          <div class="resume__header">
+            <h4>Assistant Coordinator</h4>
+            <span class="resume__date">May 2024 - Aug 2024</span>
+          </div>
+          <p class="resume__company">FSY · Santa Barbara, CA</p>
+          <ul class="resume__list">
+            <li>Trained and supervised 10+ counselors weekly, fostering high-performing team environment</li>
+            <li>Led 5+ large-scale events for <strong>2000+ youth participants</strong> focused on inclusion and unity</li>
+          </ul>
+        </div>
+
+        <div class="resume__card">
+          <div class="resume__header">
+            <h4>Infield Mentor</h4>
+            <span class="resume__date">Aug 2023 - Apr 2024</span>
+          </div>
+          <p class="resume__company">Missionary Training Center · Provo, UT</p>
+          <ul class="resume__list">
+            <li>Coached 20+ representatives weekly on goal-setting and networking skills</li>
+            <li>Achieved <strong>20% improvement</strong> in key indicator scores through personalized mentorship</li>
+            <li>Developed feedback-driven coaching strategies for high-stress environments</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Leadership & Service -->
+      <div class="resume__section">
+        <h3 class="resume__section-title"><i class="fas fa-users"></i> Leadership & Service</h3>
+
+        <div class="resume__grid">
+          <div class="resume__card resume__card--compact">
+            <h4>Lead Ambassador</h4>
+            <p class="resume__company">Healthcare Leadership Association · BYU</p>
+            <p class="resume__desc">Engage with 100+ students weekly, driving 150% increase in club participation. Scaled expansion efforts to reach 500+ business students while managing team of 8 leaders.</p>
+          </div>
+
+          <div class="resume__card resume__card--compact">
+            <h4>Patient Experience Volunteer</h4>
+            <p class="resume__company">Intermountain Health (UVH) · Provo, UT</p>
+            <p class="resume__desc">Enhance experience for 1,000+ visitors, patients, and staff. Provide translation services to improve patient communication for diverse populations.</p>
+          </div>
+
+          <div class="resume__card resume__card--compact">
+            <h4>Full-time Representative</h4>
+            <p class="resume__company">LDS Church · Ecuador & Washington DC</p>
+            <p class="resume__desc">Mentored 150+ volunteers across Ecuador & Washington DC. Contributed 350+ hours of service to indigenous communities.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="resume__section">
+        <h3 class="resume__section-title"><i class="fas fa-cog"></i> Skills & Competencies</h3>
+        <div class="skills__grid">
+          <div class="skills__category">
+            <h4>Technical & Analytical</h4>
+            <div class="skills__list">
+              <span class="skill-tag">Tableau</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Excel/VBA</span>
+              <span class="skill-tag">HTML/CSS</span>
+              <span class="skill-tag">JavaScript</span>
+            </div>
+          </div>
+          <div class="skills__category">
+            <h4>Leadership & Communication</h4>
+            <div class="skills__list">
+              <span class="skill-tag">Spanish (Fluent)</span>
+              <span class="skill-tag">Cross-Cultural Communication</span>
+              <span class="skill-tag">Team Management</span>
+              <span class="skill-tag">Public Speaking</span>
+            </div>
+          </div>
+          <div class="skills__category">
+            <h4>Strategic Analysis</h4>
+            <div class="skills__list">
+              <span class="skill-tag">Market Analysis</span>
+              <span class="skill-tag">Profit Optimization</span>
+              <span class="skill-tag">Case Competition</span>
+              <span class="skill-tag">Product Strategy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       PROJECTS
+       ═══════════════════════════════════════════════════════════════════════ -->
+  <section id="projects" class="section section--gray">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__label">Selected Work</p>
+        <h2 class="section__title">Projects & Case Studies</h2>
+      </div>
+
+      <div class="projects__grid">
+        <div class="project-card">
+          <p class="project-card__number">Project 01</p>
+          <h3 class="project-card__title">Healthy Student Planner</h3>
+          <p class="project-card__role">Creator & Developer</p>
+          <p class="project-card__desc">
+            A comprehensive web application combining academic planning with wellness tracking. Built with JavaScript and deployed on Vercel, helping students maintain both academic success and healthy habits.
+          </p>
+          <div class="project-card__tags">
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">Health Tech</span>
+            <span class="project-tag">Productivity</span>
+          </div>
+          <a href="https://my-first-app-eight-eta.vercel.app/" class="project-card__link" target="_blank">
+            View Live Demo <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="project-card project-card--placeholder">
+          <p class="project-card__number">Project 02</p>
+          <h3 class="project-card__title">Parenting App</h3>
+          <p class="project-card__role">Creator & Developer</p>
+          <p class="project-card__desc">
+            A family-focused mobile application designed to support parents with practical tools and resources. Currently in development.
+          </p>
+          <div class="project-card__tags">
+            <span class="project-tag">Family Tech</span>
+            <span class="project-tag">Mobile</span>
+            <span class="project-tag">UX Design</span>
+          </div>
+          <span class="project-card__link">
+            Coming Soon <i class="fas fa-clock"></i>
+          </span>
+        </div>
+
+        <div class="project-card">
+          <p class="project-card__number">Project 03</p>
+          <h3 class="project-card__title">Strategic Case Competitions</h3>
+          <p class="project-card__role">Strategy Analyst</p>
+          <p class="project-card__desc">
+            Researched and presented real-world strategic solutions for companies including Tesla, Walmart, Apple, Google, Dominos, Airbnb, Leland, and Skullcandy.
+          </p>
+          <div class="project-card__tags">
+            <span class="project-tag">Strategy</span>
+            <span class="project-tag">Market Analysis</span>
+            <span class="project-tag">Presentation</span>
+          </div>
+          <span class="project-card__link">
+            Case Studies Available <i class="fas fa-file-alt"></i>
+          </span>
+        </div>
+
+        <div class="project-card">
+          <p class="project-card__number">Project 04</p>
+          <h3 class="project-card__title">Big XII Healthcare Summit</h3>
+          <p class="project-card__role">Research Lead & Coordinator</p>
+          <p class="project-card__desc">
+            Pioneered research and planning for the inaugural 2025 Big XII Healthcare Leadership Case Competition & Student Summit, coordinating outreach to 100+ industry leaders.
+          </p>
+          <div class="project-card__tags">
+            <span class="project-tag">Healthcare</span>
+            <span class="project-tag">Event Planning</span>
+            <span class="project-tag">Research</span>
+          </div>
+          <span class="project-card__link">
+            200% Placement Increase <i class="fas fa-chart-line"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       TESTIMONIALS
+       ═══════════════════════════════════════════════════════════════════════ -->
+  <section id="testimonials" class="section section--gray">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__label">Kind Words</p>
+        <h2 class="section__title">What Others Say</h2>
+      </div>
+
+      <div class="testimonials__grid">
+        <div class="testimonial">
+          <div class="testimonial__quote">"</div>
+          <p class="testimonial__text">
+            Alex is an exceptional talent that any organization would be very lucky to have. His exceptional ability to be dependable and professional in his roles is especially notable. Alex is a class act—always thoughtful and considerate.
+          </p>
+          <p class="testimonial__author">Taylor W.</p>
+          <p class="testimonial__title">President, BYU Healthcare Leadership Association</p>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial__quote">"</div>
+          <p class="testimonial__text">
+            His ability to lead with integrity and purpose inspired those around him. Alex is deeply compassionate and selfless, consistently ensuring that others feel included, supported, and valued.
+          </p>
+          <p class="testimonial__author">Tracy Skousen</p>
+          <p class="testimonial__title">CEO & Founder, Successful Leaders LLC</p>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial__quote">"</div>
+          <p class="testimonial__text">
+            Alex is clearly a very strong and gifted student—humble, eager to learn, and genuinely kind. His friendly and caring nature fosters a positive environment in any setting.
+          </p>
+          <p class="testimonial__author">Dr. Timothy Gubler</p>
+          <p class="testimonial__title">Associate Professor of Strategy, BYU Marriott</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       CONTACT
+       ═══════════════════════════════════════════════════════════════════════ -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="contact__title">Let's Build Something Meaningful</h2>
+      <p class="contact__subtitle">
+        I'm always excited to connect with people who share a passion for strategy, healthcare innovation, and making a positive difference.
+      </p>
+      <a href="mailto:alexnap101@gmail.com" class="contact__email">
+        alexnap101@gmail.com
+      </a>
+      <div class="contact__links">
+        <a href="https://www.linkedin.com/in/alex-napierski/" class="contact__link" target="_blank">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/ajnap" class="contact__link" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="tel:+18014207131" class="contact__link">
+          <i class="fas fa-phone"></i> (801) 420-7131
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">© 2025 Alex Napierski. Built with purpose.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
