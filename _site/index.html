@@ -6,10 +6,10 @@
   <title>Alex Napierski — Strategy & Healthcare Innovation</title>
   <meta name="description" content="Strategic Management student at BYU Marriott School of Business. Passionate about healthcare innovation, product development, and creating meaningful impact.">
 
-  <!-- Fonts -->
+  <!-- Fonts - Elegant Serif + Clean Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
 
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -19,8 +19,9 @@
 
   <style>
     /* ═══════════════════════════════════════════════════════════════════════════
-       ALEX NAPIERSKI PORTFOLIO — Clean Minimal Design
-       Inspired by architect-cv template
+       ALEX NAPIERSKI PORTFOLIO — Editorial Refined Design
+       Typography: Playfair Display (headings) + DM Sans (body)
+       Aesthetic: Luxury Editorial meets Modern Minimal
        ═══════════════════════════════════════════════════════════════════════════ */
 
     * {
@@ -30,19 +31,29 @@
     }
 
     :root {
+      /* Refined Color Palette */
       --color-black: #1a1a1a;
-      --color-gray-900: #2d2d2d;
-      --color-gray-700: #4a4a4a;
-      --color-gray-500: #717171;
-      --color-gray-300: #a3a3a3;
-      --color-gray-100: #f5f5f5;
+      --color-charcoal: #2d2d2d;
+      --color-slate: #4a4a4a;
+      --color-stone: #6b6b6b;
+      --color-gray: #9a9a9a;
+      --color-silver: #d4d4d4;
+      --color-cloud: #f7f7f7;
       --color-white: #ffffff;
-      --color-accent: #e8f4fc;
-      --color-accent-dark: #b8d4e8;
 
-      --font-main: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      /* Accent Colors */
+      --color-sage: #e8f0ed;
+      --color-sage-dark: #c5d5ce;
+      --color-mint: #dceee7;
+      --color-cream: #faf9f7;
+
+      /* Typography */
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+      /* Layout */
       --container-width: 1200px;
-      --section-padding: 100px;
+      --section-padding: 120px;
     }
 
     html {
@@ -50,22 +61,19 @@
     }
 
     body {
-      font-family: var(--font-main);
+      font-family: var(--font-body);
       font-size: 16px;
-      line-height: 1.6;
-      color: var(--color-gray-700);
+      line-height: 1.7;
+      color: var(--color-slate);
       background-color: var(--color-white);
       -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
     }
 
     a {
       color: inherit;
       text-decoration: none;
-      transition: color 0.2s ease;
-    }
-
-    a:hover {
-      color: var(--color-black);
+      transition: all 0.3s ease;
     }
 
     img {
@@ -77,8 +85,27 @@
     .container {
       max-width: var(--container-width);
       margin: 0 auto;
-      padding: 0 40px;
+      padding: 0 48px;
     }
+
+    /* ─────────────────────────────────────────────────────────────────────────
+       Scroll Animations
+       ───────────────────────────────────────────────────────────────────────── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
 
     /* ─────────────────────────────────────────────────────────────────────────
        Header / Navigation
@@ -89,78 +116,111 @@
       left: 0;
       right: 0;
       z-index: 1000;
-      background: var(--color-white);
-      border-bottom: 1px solid var(--color-gray-100);
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+    }
+
+    .header.scrolled {
+      box-shadow: 0 4px 30px rgba(0,0,0,0.06);
     }
 
     .header__inner {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      height: 80px;
+      height: 90px;
     }
 
     .header__logo {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 14px;
     }
 
     .header__logo-icon {
-      width: 32px;
-      height: 32px;
+      width: 42px;
+      height: 42px;
       background: var(--color-black);
       display: flex;
       align-items: center;
       justify-content: center;
       color: var(--color-white);
-      font-size: 14px;
-      font-weight: 600;
+      font-family: var(--font-display);
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
     }
 
     .header__logo-text {
-      font-size: 18px;
-      font-weight: 600;
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 500;
       color: var(--color-black);
+      letter-spacing: -0.3px;
     }
 
     .header__logo-subtitle {
-      font-size: 12px;
-      color: var(--color-gray-500);
+      font-size: 11px;
+      font-weight: 400;
+      color: var(--color-stone);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
       margin-top: 2px;
     }
 
     .header__nav {
       display: flex;
       align-items: center;
-      gap: 40px;
+      gap: 48px;
     }
 
     .header__nav-links {
       display: flex;
-      gap: 32px;
+      gap: 36px;
       list-style: none;
     }
 
     .header__nav-link {
-      font-size: 14px;
-      color: var(--color-gray-500);
-      transition: color 0.2s ease;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--color-stone);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      position: relative;
+    }
+
+    .header__nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: var(--color-black);
+      transition: width 0.3s ease;
     }
 
     .header__nav-link:hover {
       color: var(--color-black);
     }
 
+    .header__nav-link:hover::after {
+      width: 100%;
+    }
+
     .header__contact {
       display: flex;
       align-items: center;
-      gap: 24px;
+      gap: 20px;
+      padding-left: 24px;
+      border-left: 1px solid var(--color-silver);
     }
 
     .header__contact-item {
       font-size: 13px;
-      color: var(--color-gray-700);
+      color: var(--color-slate);
     }
 
     .header__social {
@@ -169,15 +229,24 @@
     }
 
     .header__social a {
-      color: var(--color-gray-500);
-      font-size: 16px;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-stone);
+      border: 1px solid var(--color-silver);
+      border-radius: 50%;
+      font-size: 14px;
+      transition: all 0.3s ease;
     }
 
     .header__social a:hover {
-      color: var(--color-black);
+      color: var(--color-white);
+      background: var(--color-black);
+      border-color: var(--color-black);
     }
 
-    /* Mobile menu toggle */
     .header__menu-toggle {
       display: none;
       background: none;
@@ -189,14 +258,14 @@
     .header__menu-toggle span {
       display: block;
       width: 24px;
-      height: 2px;
+      height: 1.5px;
       background: var(--color-black);
-      margin: 5px 0;
+      margin: 6px 0;
       transition: 0.3s;
     }
 
     /* ─────────────────────────────────────────────────────────────────────────
-       Hero Section — Full Bleed Background
+       Hero Section — Full Bleed with Overlay
        ───────────────────────────────────────────────────────────────────────── */
     .hero {
       position: relative;
@@ -220,33 +289,46 @@
       object-position: center center;
     }
 
+    .hero__overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 40%;
+      background: linear-gradient(to top, rgba(0,0,0,0.4), transparent);
+      pointer-events: none;
+    }
+
     .hero__scroll {
       position: absolute;
-      bottom: 40px;
+      bottom: 48px;
       left: 50%;
       transform: translateX(-50%);
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 8px;
+      gap: 12px;
       color: var(--color-white);
-      font-size: 12px;
+      z-index: 10;
+    }
+
+    .hero__scroll-text {
+      font-size: 11px;
       font-weight: 500;
       text-transform: uppercase;
-      letter-spacing: 2px;
-      z-index: 10;
+      letter-spacing: 3px;
     }
 
     .hero__scroll-line {
       width: 1px;
-      height: 40px;
-      background: var(--color-white);
+      height: 50px;
+      background: linear-gradient(to bottom, var(--color-white), transparent);
       animation: scrollPulse 2s ease-in-out infinite;
     }
 
     @keyframes scrollPulse {
-      0%, 100% { opacity: 1; transform: scaleY(1); }
-      50% { opacity: 0.5; transform: scaleY(0.8); }
+      0%, 100% { opacity: 1; height: 50px; }
+      50% { opacity: 0.4; height: 35px; }
     }
 
     /* ─────────────────────────────────────────────────────────────────────────
@@ -256,310 +338,454 @@
       padding: var(--section-padding) 0;
     }
 
-    .section--gray {
-      background: var(--color-gray-100);
+    .section--cream {
+      background: var(--color-cream);
+    }
+
+    .section--sage {
+      background: var(--color-sage);
     }
 
     .section__header {
-      margin-bottom: 60px;
+      margin-bottom: 72px;
+      text-align: center;
     }
 
-    .section__label {
-      font-size: 12px;
+    .section__eyebrow {
+      font-size: 11px;
       font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 2px;
-      color: var(--color-gray-500);
-      margin-bottom: 16px;
+      letter-spacing: 3px;
+      color: var(--color-stone);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .section__eyebrow::before,
+    .section__eyebrow::after {
+      content: '';
+      width: 40px;
+      height: 1px;
+      background: var(--color-silver);
     }
 
     .section__title {
-      font-size: 36px;
-      font-weight: 700;
+      font-family: var(--font-display);
+      font-size: 48px;
+      font-weight: 500;
       color: var(--color-black);
       line-height: 1.2;
+      letter-spacing: -0.5px;
+    }
+
+    .section__subtitle {
+      font-size: 17px;
+      color: var(--color-stone);
+      max-width: 600px;
+      margin: 20px auto 0;
+      line-height: 1.7;
+    }
+
+    /* ─────────────────────────────────────────────────────────────────────────
+       What I Do — Services Section
+       ───────────────────────────────────────────────────────────────────────── */
+    .services {
+      padding: 80px 0;
+      background: var(--color-cream);
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .services__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--color-silver);
+    }
+
+    .service-card {
+      background: var(--color-cream);
+      padding: 48px 32px;
+      text-align: center;
+      transition: all 0.4s ease;
+    }
+
+    .service-card:hover {
+      background: var(--color-white);
+    }
+
+    .service-card__icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      color: var(--color-black);
+      border: 1px solid var(--color-silver);
+      border-radius: 50%;
+      transition: all 0.3s ease;
+    }
+
+    .service-card:hover .service-card__icon {
+      background: var(--color-black);
+      color: var(--color-white);
+      border-color: var(--color-black);
+    }
+
+    .service-card__title {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--color-black);
+      margin-bottom: 12px;
+    }
+
+    .service-card__desc {
+      font-size: 14px;
+      color: var(--color-stone);
+      line-height: 1.6;
     }
 
     /* ─────────────────────────────────────────────────────────────────────────
        About Section
        ───────────────────────────────────────────────────────────────────────── */
-    .about__content {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: start;
-    }
-
-    .about__text p {
-      font-size: 17px;
-      line-height: 1.8;
-      margin-bottom: 24px;
-      color: var(--color-gray-700);
-    }
-
-    .about__skills-title {
-      font-size: 14px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--color-black);
-      margin-bottom: 16px;
-      margin-top: 40px;
-    }
-
-    .about__skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .skill-tag {
-      padding: 8px 16px;
-      background: var(--color-accent);
-      color: var(--color-gray-700);
-      font-size: 13px;
-      font-weight: 500;
-      border-radius: 4px;
-    }
-
-    .about__image img {
-      border-radius: 8px;
-    }
-
-    .about__text-full {
+    .about__intro {
       max-width: 800px;
-      margin-bottom: 60px;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 0 auto 80px;
       text-align: center;
     }
 
-    .about__text-full p {
-      font-size: 17px;
-      line-height: 1.8;
+    .about__intro p {
+      font-size: 18px;
+      line-height: 1.9;
+      color: var(--color-slate);
       margin-bottom: 24px;
-      color: var(--color-gray-700);
     }
 
-    .about__skills {
+    .about__intro p:first-of-type::first-letter {
+      font-family: var(--font-display);
+      font-size: 56px;
+      float: left;
+      line-height: 1;
+      padding-right: 12px;
+      color: var(--color-black);
+    }
+
+    /* Skills with Checkmarks */
+    .skills-check {
+      display: flex;
+      flex-wrap: wrap;
       justify-content: center;
+      gap: 12px 32px;
+      margin-top: 40px;
     }
 
-    /* Travel Photo Gallery */
+    .skills-check__item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 15px;
+      color: var(--color-slate);
+    }
+
+    .skills-check__item i {
+      color: var(--color-sage-dark);
+      font-size: 14px;
+    }
+
+    /* Photo Gallery */
     .about__gallery {
-      margin-top: 60px;
-      margin-bottom: 60px;
+      margin-top: 80px;
+    }
+
+    .about__gallery-header {
+      text-align: center;
+      margin-bottom: 48px;
     }
 
     .about__gallery-title {
-      font-size: 24px;
-      font-weight: 600;
+      font-family: var(--font-display);
+      font-size: 32px;
+      font-weight: 500;
       color: var(--color-black);
       margin-bottom: 12px;
     }
 
     .about__gallery-subtitle {
       font-size: 16px;
-      color: var(--color-gray-500);
-      margin-bottom: 32px;
-      max-width: 600px;
+      color: var(--color-stone);
+      max-width: 500px;
+      margin: 0 auto;
     }
 
     .gallery__grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: auto auto;
-      gap: 20px;
+      grid-template-rows: repeat(2, 220px);
+      gap: 16px;
     }
 
     .gallery__item {
       position: relative;
       overflow: hidden;
-      border-radius: 8px;
-      aspect-ratio: 4/3;
+      border-radius: 4px;
     }
 
-    .gallery__item--large {
+    .gallery__item--tall {
       grid-row: span 2;
-      aspect-ratio: auto;
     }
 
     .gallery__item img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: transform 0.4s ease;
+      transition: transform 0.6s ease;
     }
 
     .gallery__item:hover img {
-      transform: scale(1.05);
+      transform: scale(1.08);
+    }
+
+    .gallery__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.7), transparent 60%);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      display: flex;
+      align-items: flex-end;
+      padding: 24px;
+    }
+
+    .gallery__item:hover .gallery__overlay {
+      opacity: 1;
     }
 
     .gallery__caption {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 20px;
-      background: linear-gradient(transparent, rgba(0,0,0,0.8));
       color: var(--color-white);
-      transform: translateY(100%);
-      transition: transform 0.3s ease;
-    }
-
-    .gallery__item:hover .gallery__caption {
-      transform: translateY(0);
-    }
-
-    .gallery__flag {
-      font-size: 20px;
-      margin-right: 8px;
     }
 
     .gallery__location {
-      font-size: 16px;
-      font-weight: 600;
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 4px;
     }
 
     .gallery__desc {
       font-size: 13px;
-      margin-top: 8px;
-      opacity: 0.9;
+      opacity: 0.85;
       line-height: 1.4;
     }
 
-    /* Personal Background Grid */
+    /* Personal Grid */
     .about__personal {
-      margin-top: 60px;
-      margin-bottom: 60px;
+      margin-top: 80px;
     }
 
     .personal__grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 24px;
+      gap: 20px;
     }
 
-    .personal__item {
-      padding: 24px;
-      background: var(--color-gray-100);
-      border-radius: 8px;
+    .personal__card {
+      padding: 36px 28px;
+      background: var(--color-cloud);
+      border-radius: 4px;
       text-align: center;
+      transition: all 0.3s ease;
     }
 
-    .personal__icon {
-      font-size: 32px;
-      display: block;
+    .personal__card:hover {
+      background: var(--color-white);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+      transform: translateY(-4px);
+    }
+
+    .personal__card-icon {
+      font-size: 24px;
+      color: var(--color-sage-dark);
+      margin-bottom: 20px;
+    }
+
+    .personal__card h4 {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--color-black);
       margin-bottom: 12px;
     }
 
-    .personal__icon-fa {
-      font-size: 28px;
-      color: var(--color-accent-dark);
-      margin-bottom: 16px;
-    }
-
-    .personal__item h4 {
-      font-size: 16px;
-      font-weight: 600;
-      color: var(--color-black);
-      margin-bottom: 8px;
-    }
-
-    .personal__item p {
+    .personal__card p {
       font-size: 14px;
-      color: var(--color-gray-500);
-      line-height: 1.5;
+      color: var(--color-stone);
+      line-height: 1.6;
     }
 
     /* Family Photo */
     .about__family {
-      margin-top: 40px;
+      margin-top: 80px;
       text-align: center;
     }
 
     .about__family img {
       width: 100%;
-      max-width: 900px;
-      border-radius: 8px;
-      margin: 0 auto 20px;
+      max-width: 1000px;
+      margin: 0 auto 24px;
+      border-radius: 4px;
     }
 
     .about__family-caption {
       font-size: 15px;
-      color: var(--color-gray-500);
+      color: var(--color-stone);
       font-style: italic;
       max-width: 600px;
       margin: 0 auto;
     }
 
     /* ─────────────────────────────────────────────────────────────────────────
+       Timeline Section — Horizontal with Large Years
+       ───────────────────────────────────────────────────────────────────────── */
+    .timeline {
+      padding: 100px 0;
+      background: var(--color-white);
+      overflow: hidden;
+    }
+
+    .timeline__track {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      border-top: 1px solid var(--color-silver);
+      margin-top: 40px;
+    }
+
+    .timeline__item {
+      padding: 48px 32px 32px;
+      position: relative;
+      text-align: left;
+    }
+
+    .timeline__item::before {
+      content: '';
+      position: absolute;
+      top: -5px;
+      left: 32px;
+      width: 9px;
+      height: 9px;
+      background: var(--color-white);
+      border: 2px solid var(--color-black);
+      border-radius: 50%;
+    }
+
+    .timeline__eyebrow {
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--color-gray);
+      margin-bottom: 8px;
+    }
+
+    .timeline__year {
+      font-family: var(--font-display);
+      font-size: 56px;
+      font-weight: 400;
+      color: var(--color-sage-dark);
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+
+    .timeline__title {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--color-black);
+      margin-bottom: 12px;
+    }
+
+    .timeline__desc {
+      font-size: 14px;
+      color: var(--color-stone);
+      line-height: 1.6;
+    }
+
+    /* ─────────────────────────────────────────────────────────────────────────
        Resume Section
        ───────────────────────────────────────────────────────────────────────── */
     .resume__section {
-      margin-bottom: 48px;
+      margin-bottom: 56px;
     }
 
     .resume__section-title {
-      font-size: 20px;
-      font-weight: 600;
+      font-family: var(--font-display);
+      font-size: 24px;
+      font-weight: 500;
       color: var(--color-black);
-      margin-bottom: 24px;
+      margin-bottom: 28px;
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 14px;
     }
 
     .resume__section-title i {
-      color: var(--color-accent-dark);
+      color: var(--color-sage-dark);
+      font-size: 20px;
     }
 
     .resume__card {
-      padding: 28px;
+      padding: 32px;
       background: var(--color-white);
-      border: 1px solid var(--color-gray-100);
-      border-radius: 8px;
+      border: 1px solid var(--color-cloud);
+      border-radius: 4px;
       margin-bottom: 16px;
-      transition: box-shadow 0.3s ease;
+      transition: all 0.3s ease;
     }
 
     .resume__card:hover {
-      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      border-color: var(--color-sage-dark);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.04);
     }
 
     .resume__header {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      margin-bottom: 4px;
+      margin-bottom: 6px;
       flex-wrap: wrap;
       gap: 8px;
     }
 
     .resume__header h4 {
-      font-size: 18px;
-      font-weight: 600;
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 500;
       color: var(--color-black);
     }
 
     .resume__date {
       font-size: 13px;
-      color: var(--color-gray-500);
+      color: var(--color-gray);
       font-weight: 500;
     }
 
     .resume__company {
       font-size: 14px;
-      color: var(--color-gray-500);
-      margin-bottom: 12px;
+      color: var(--color-stone);
+      margin-bottom: 16px;
     }
 
     .resume__list {
       margin: 0;
       padding-left: 20px;
-      color: var(--color-gray-700);
+      color: var(--color-slate);
       font-size: 15px;
-      line-height: 1.7;
+      line-height: 1.8;
     }
 
     .resume__list li {
@@ -570,51 +796,52 @@
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
-      margin-top: 16px;
+      margin-top: 20px;
     }
 
     .resume__tag {
-      padding: 4px 12px;
-      background: var(--color-accent);
-      color: var(--color-gray-700);
+      padding: 6px 14px;
+      background: var(--color-sage);
+      color: var(--color-slate);
       font-size: 12px;
       font-weight: 500;
-      border-radius: 4px;
+      border-radius: 2px;
     }
 
     .resume__grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+      gap: 16px;
     }
 
     .resume__card--compact {
-      padding: 24px;
+      padding: 28px;
     }
 
     .resume__card--compact h4 {
-      font-size: 16px;
-      margin-bottom: 4px;
+      font-size: 17px;
+      margin-bottom: 6px;
     }
 
     .resume__desc {
       font-size: 14px;
-      color: var(--color-gray-500);
+      color: var(--color-stone);
       line-height: 1.6;
-      margin-top: 8px;
+      margin-top: 12px;
     }
 
     .skills__grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
+      gap: 32px;
     }
 
     .skills__category h4 {
-      font-size: 14px;
-      font-weight: 600;
+      font-family: var(--font-display);
+      font-size: 16px;
+      font-weight: 500;
       color: var(--color-black);
-      margin-bottom: 12px;
+      margin-bottom: 16px;
     }
 
     .skills__list {
@@ -623,56 +850,18 @@
       gap: 8px;
     }
 
-    /* ─────────────────────────────────────────────────────────────────────────
-       Milestones Section
-       ───────────────────────────────────────────────────────────────────────── */
-    .milestones__grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 30px;
+    .skill-tag {
+      padding: 8px 16px;
+      background: var(--color-cloud);
+      color: var(--color-slate);
+      font-size: 13px;
+      font-weight: 500;
+      border-radius: 2px;
+      transition: all 0.2s ease;
     }
 
-    .milestone {
-      padding: 32px;
-      background: var(--color-white);
-      border: 1px solid var(--color-gray-100);
-      transition: all 0.3s ease;
-    }
-
-    .milestone:hover {
-      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
-      transform: translateY(-4px);
-    }
-
-    .milestone__number {
-      font-size: 48px;
-      font-weight: 300;
-      color: var(--color-accent-dark);
-      line-height: 1;
-      margin-bottom: 20px;
-    }
-
-    .milestone__date {
-      font-size: 12px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--color-gray-500);
-      margin-bottom: 8px;
-    }
-
-    .milestone__title {
-      font-size: 18px;
-      font-weight: 600;
-      color: var(--color-black);
-      margin-bottom: 8px;
-      line-height: 1.3;
-    }
-
-    .milestone__desc {
-      font-size: 14px;
-      color: var(--color-gray-500);
-      line-height: 1.6;
+    .skill-tag:hover {
+      background: var(--color-sage);
     }
 
     /* ─────────────────────────────────────────────────────────────────────────
@@ -681,49 +870,54 @@
     .projects__grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 30px;
+      gap: 24px;
     }
 
     .project-card {
-      padding: 40px;
+      padding: 44px;
       background: var(--color-white);
-      border: 1px solid var(--color-gray-100);
-      transition: all 0.3s ease;
+      border: 1px solid var(--color-cloud);
+      border-radius: 4px;
+      transition: all 0.4s ease;
     }
 
     .project-card:hover {
-      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
-      transform: translateY(-4px);
+      border-color: var(--color-sage-dark);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.06);
+      transform: translateY(-6px);
     }
 
     .project-card--placeholder {
       border-style: dashed;
-      background: var(--color-gray-100);
+      background: var(--color-cloud);
     }
 
     .project-card__number {
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 600;
-      color: var(--color-gray-500);
-      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--color-gray);
+      margin-bottom: 20px;
     }
 
     .project-card__title {
-      font-size: 24px;
-      font-weight: 600;
+      font-family: var(--font-display);
+      font-size: 26px;
+      font-weight: 500;
       color: var(--color-black);
       margin-bottom: 8px;
     }
 
     .project-card__role {
       font-size: 14px;
-      color: var(--color-gray-500);
-      margin-bottom: 16px;
+      color: var(--color-stone);
+      margin-bottom: 20px;
     }
 
     .project-card__desc {
       font-size: 15px;
-      color: var(--color-gray-700);
+      color: var(--color-slate);
       line-height: 1.7;
       margin-bottom: 24px;
     }
@@ -732,33 +926,33 @@
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
-      margin-bottom: 20px;
+      margin-bottom: 24px;
     }
 
     .project-tag {
-      padding: 4px 12px;
-      background: var(--color-gray-100);
-      color: var(--color-gray-700);
+      padding: 6px 14px;
+      background: var(--color-cloud);
+      color: var(--color-slate);
       font-size: 12px;
       font-weight: 500;
-      border-radius: 4px;
+      border-radius: 2px;
     }
 
     .project-card__link {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
       font-size: 14px;
       font-weight: 500;
       color: var(--color-black);
     }
 
     .project-card__link i {
-      transition: transform 0.2s ease;
+      transition: transform 0.3s ease;
     }
 
     .project-card__link:hover i {
-      transform: translateX(4px);
+      transform: translateX(6px);
     }
 
     /* ─────────────────────────────────────────────────────────────────────────
@@ -767,39 +961,42 @@
     .testimonials__grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
+      gap: 24px;
     }
 
     .testimonial {
-      padding: 40px;
+      padding: 44px;
       background: var(--color-white);
-      border: 1px solid var(--color-gray-100);
+      border: 1px solid var(--color-cloud);
+      border-radius: 4px;
     }
 
     .testimonial__quote {
-      font-size: 48px;
-      color: var(--color-accent-dark);
-      line-height: 1;
-      margin-bottom: 16px;
+      font-family: var(--font-display);
+      font-size: 72px;
+      color: var(--color-sage-dark);
+      line-height: 0.5;
+      margin-bottom: 24px;
     }
 
     .testimonial__text {
       font-size: 16px;
       font-style: italic;
-      color: var(--color-gray-700);
-      line-height: 1.7;
-      margin-bottom: 24px;
+      color: var(--color-slate);
+      line-height: 1.8;
+      margin-bottom: 28px;
     }
 
     .testimonial__author {
-      font-size: 14px;
-      font-weight: 600;
+      font-family: var(--font-display);
+      font-size: 16px;
+      font-weight: 500;
       color: var(--color-black);
     }
 
     .testimonial__title {
       font-size: 13px;
-      color: var(--color-gray-500);
+      color: var(--color-stone);
       margin-top: 4px;
     }
 
@@ -808,8 +1005,8 @@
        ───────────────────────────────────────────────────────────────────────── */
     .learnings__grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 24px;
       max-width: 900px;
       margin: 0 auto;
     }
@@ -817,20 +1014,20 @@
     .learning-card {
       display: flex;
       background: var(--color-white);
-      border: 1px solid var(--color-gray-100);
-      border-radius: 12px;
+      border: 1px solid var(--color-cloud);
+      border-radius: 4px;
       overflow: hidden;
-      transition: all 0.3s ease;
+      transition: all 0.4s ease;
     }
 
     .learning-card:hover {
-      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
-      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+      transform: translateY(-6px);
     }
 
     .learning-card__image {
-      width: 140px;
-      min-height: 180px;
+      width: 160px;
+      min-height: 200px;
       flex-shrink: 0;
     }
 
@@ -841,114 +1038,141 @@
     }
 
     .learning-card__content {
-      padding: 24px;
+      padding: 32px;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
 
     .learning-card__quote {
-      font-size: 16px;
+      font-family: var(--font-display);
+      font-size: 18px;
       font-style: italic;
-      color: var(--color-gray-700);
+      color: var(--color-slate);
       line-height: 1.6;
-      margin-bottom: 16px;
+      margin-bottom: 20px;
     }
 
     .learning-card__author {
-      font-size: 15px;
-      font-weight: 600;
+      font-family: var(--font-display);
+      font-size: 16px;
+      font-weight: 500;
       color: var(--color-black);
     }
 
     .learning-card__title {
       font-size: 13px;
-      color: var(--color-gray-500);
-      margin-top: 2px;
-    }
-
-    @media (max-width: 500px) {
-      .learning-card {
-        flex-direction: column;
-      }
-
-      .learning-card__image {
-        width: 100%;
-        height: 200px;
-      }
+      color: var(--color-stone);
+      margin-top: 4px;
     }
 
     /* ─────────────────────────────────────────────────────────────────────────
-       Contact Section
+       Contact Section — Colored Background with Large Icons
        ───────────────────────────────────────────────────────────────────────── */
     .contact {
-      text-align: center;
+      background: var(--color-sage);
       padding: 120px 0;
     }
 
+    .contact__inner {
+      text-align: center;
+    }
+
+    .contact__eyebrow {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--color-stone);
+      margin-bottom: 20px;
+    }
+
     .contact__title {
-      font-size: 42px;
-      font-weight: 700;
+      font-family: var(--font-display);
+      font-size: 48px;
+      font-weight: 500;
       color: var(--color-black);
       margin-bottom: 16px;
     }
 
     .contact__subtitle {
-      font-size: 18px;
-      color: var(--color-gray-500);
-      margin-bottom: 40px;
+      font-size: 17px;
+      color: var(--color-stone);
+      margin-bottom: 56px;
       max-width: 500px;
       margin-left: auto;
       margin-right: auto;
     }
 
-    .contact__email {
-      font-size: 28px;
-      font-weight: 500;
-      color: var(--color-black);
-      margin-bottom: 40px;
-      display: inline-block;
-      border-bottom: 2px solid var(--color-accent-dark);
-      padding-bottom: 4px;
-    }
-
-    .contact__links {
+    .contact__methods {
       display: flex;
       justify-content: center;
-      gap: 32px;
+      gap: 64px;
+      flex-wrap: wrap;
     }
 
-    .contact__link {
+    .contact__method {
+      text-align: center;
+    }
+
+    .contact__method-icon {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 20px;
       display: flex;
       align-items: center;
-      gap: 8px;
-      font-size: 15px;
-      color: var(--color-gray-500);
+      justify-content: center;
+      font-size: 28px;
+      color: var(--color-black);
+      border: 1px solid var(--color-sage-dark);
+      border-radius: 50%;
+      transition: all 0.3s ease;
     }
 
-    .contact__link:hover {
+    .contact__method:hover .contact__method-icon {
+      background: var(--color-black);
+      color: var(--color-white);
+      border-color: var(--color-black);
+    }
+
+    .contact__method-label {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--color-stone);
+      margin-bottom: 8px;
+    }
+
+    .contact__method-value {
+      font-size: 16px;
       color: var(--color-black);
+      font-weight: 500;
     }
 
     /* ─────────────────────────────────────────────────────────────────────────
        Footer
        ───────────────────────────────────────────────────────────────────────── */
     .footer {
-      padding: 40px 0;
-      border-top: 1px solid var(--color-gray-100);
+      padding: 48px 0;
+      background: var(--color-black);
       text-align: center;
     }
 
     .footer__text {
-      font-size: 14px;
-      color: var(--color-gray-500);
+      font-size: 13px;
+      color: var(--color-gray);
     }
 
     /* ─────────────────────────────────────────────────────────────────────────
        Responsive
        ───────────────────────────────────────────────────────────────────────── */
     @media (max-width: 1024px) {
-      .milestones__grid {
+      .services__grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .timeline__track {
         grid-template-columns: repeat(2, 1fr);
       }
 
@@ -960,9 +1184,10 @@
 
       .gallery__grid {
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 180px);
       }
 
-      .gallery__item--large {
+      .gallery__item--tall {
         grid-row: span 1;
       }
 
@@ -980,26 +1205,9 @@
       }
     }
 
-    @media (max-width: 900px) {
-      .about__content {
-        grid-template-columns: 1fr;
-        gap: 40px;
-      }
-
-      .about__image {
-        order: -1;
-        max-width: 400px;
-        margin: 0 auto;
-      }
-
-      .projects__grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
     @media (max-width: 768px) {
       :root {
-        --section-padding: 60px;
+        --section-padding: 80px;
       }
 
       .container {
@@ -1016,38 +1224,62 @@
       }
 
       .section__title {
-        font-size: 28px;
+        font-size: 36px;
       }
 
-      .milestones__grid {
+      .services__grid {
         grid-template-columns: 1fr;
+      }
+
+      .timeline__track {
+        grid-template-columns: 1fr;
+      }
+
+      .timeline__year {
+        font-size: 44px;
       }
 
       .gallery__grid {
         grid-template-columns: 1fr;
+        grid-template-rows: auto;
+      }
+
+      .gallery__item {
+        aspect-ratio: 16/10;
+      }
+
+      .gallery__overlay {
+        opacity: 1;
+        background: linear-gradient(to top, rgba(0,0,0,0.6), transparent 70%);
       }
 
       .personal__grid {
         grid-template-columns: 1fr;
       }
 
-      .gallery__caption {
-        transform: translateY(0);
-        position: relative;
-        background: var(--color-gray-900);
+      .projects__grid {
+        grid-template-columns: 1fr;
       }
 
       .contact__title {
-        font-size: 32px;
+        font-size: 36px;
       }
 
-      .contact__email {
-        font-size: 20px;
+      .contact__methods {
+        gap: 40px;
       }
 
-      .contact__links {
+      .learnings__grid {
+        grid-template-columns: 1fr;
+      }
+
+      .learning-card {
         flex-direction: column;
-        gap: 16px;
+      }
+
+      .learning-card__image {
+        width: 100%;
+        height: 220px;
       }
     }
   </style>
@@ -1056,7 +1288,7 @@
   <!-- ═══════════════════════════════════════════════════════════════════════
        HEADER
        ═══════════════════════════════════════════════════════════════════════ -->
-  <header class="header">
+  <header class="header" id="header">
     <div class="container">
       <div class="header__inner">
         <a href="#" class="header__logo">
@@ -1070,21 +1302,18 @@
         <nav class="header__nav">
           <ul class="header__nav-links">
             <li><a href="#about" class="header__nav-link">About</a></li>
+            <li><a href="#journey" class="header__nav-link">Journey</a></li>
             <li><a href="#resume" class="header__nav-link">Resume</a></li>
             <li><a href="#projects" class="header__nav-link">Projects</a></li>
-            <li><a href="#testimonials" class="header__nav-link">Testimonials</a></li>
-            <li><a href="#learnings" class="header__nav-link">Life Learnings</a></li>
+            <li><a href="#learnings" class="header__nav-link">Learnings</a></li>
             <li><a href="#contact" class="header__nav-link">Contact</a></li>
           </ul>
 
           <div class="header__contact">
-            <a href="mailto:alexnap101@gmail.com" class="header__contact-item">alexnap101@gmail.com</a>
-            <span class="header__contact-item">(801) 420-7131</span>
-          </div>
-
-          <div class="header__social">
-            <a href="https://www.linkedin.com/in/alex-napierski/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/ajnap" target="_blank"><i class="fab fa-github"></i></a>
+            <div class="header__social">
+              <a href="https://www.linkedin.com/in/alex-napierski/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://github.com/ajnap" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
           </div>
         </nav>
 
@@ -1098,15 +1327,46 @@
   </header>
 
   <!-- ═══════════════════════════════════════════════════════════════════════
-       HERO — Full Bleed Background
+       HERO
        ═══════════════════════════════════════════════════════════════════════ -->
   <section class="hero">
     <div class="hero__image">
       <img src="images/portfolio1.jpg" alt="Alex Napierski">
     </div>
+    <div class="hero__overlay"></div>
     <div class="hero__scroll">
-      <span>Scroll</span>
+      <span class="hero__scroll-text">Scroll</span>
       <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       SERVICES — What I Do
+       ═══════════════════════════════════════════════════════════════════════ -->
+  <section class="services">
+    <div class="container">
+      <div class="services__grid">
+        <div class="service-card reveal">
+          <div class="service-card__icon"><i class="fas fa-chess"></i></div>
+          <h3 class="service-card__title">Strategy</h3>
+          <p class="service-card__desc">Strategic analysis and consulting for complex business challenges</p>
+        </div>
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-card__icon"><i class="fas fa-heartbeat"></i></div>
+          <h3 class="service-card__title">Healthcare</h3>
+          <p class="service-card__desc">Innovation and research in healthcare systems and patient experience</p>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-card__icon"><i class="fas fa-lightbulb"></i></div>
+          <h3 class="service-card__title">Product</h3>
+          <p class="service-card__desc">Product development from ideation to market-ready solutions</p>
+        </div>
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-card__icon"><i class="fas fa-chart-line"></i></div>
+          <h3 class="service-card__title">Analytics</h3>
+          <p class="service-card__desc">Data-driven insights using SQL, Python, Tableau, and Excel</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -1115,12 +1375,12 @@
        ═══════════════════════════════════════════════════════════════════════ -->
   <section id="about" class="section">
     <div class="container">
-      <div class="section__header">
-        <p class="section__label">About Me</p>
+      <div class="section__header reveal">
+        <p class="section__eyebrow">About Me</p>
         <h2 class="section__title">Building at the Intersection<br>of Strategy & Healthcare</h2>
       </div>
 
-      <div class="about__text-full">
+      <div class="about__intro reveal">
         <p>
           I'm a Strategic Management student at BYU's Marriott School of Business with a deep passion for healthcare innovation. My work bridges business strategy, data analytics, and product development—helping organizations solve complex problems and create meaningful change.
         </p>
@@ -1128,94 +1388,100 @@
           From pioneering the Big XII Healthcare Leadership Case Competition to driving 5x growth in buyer identification at an AI startup, I thrive at the intersection of strategic thinking and hands-on execution. My international experience studying health systems across 8 European countries has shaped my perspective on building inclusive, patient-centered solutions.
         </p>
 
-        <h3 class="about__skills-title">I'm Good At</h3>
-        <div class="about__skills">
-          <span class="skill-tag">Strategy & Consulting</span>
-          <span class="skill-tag">Product Development</span>
-          <span class="skill-tag">Healthcare Innovation</span>
-          <span class="skill-tag">Data Analytics</span>
-          <span class="skill-tag">Leadership</span>
-          <span class="skill-tag">Cross-Cultural Communication</span>
+        <div class="skills-check">
+          <span class="skills-check__item"><i class="fas fa-check"></i> Strategy & Consulting</span>
+          <span class="skills-check__item"><i class="fas fa-check"></i> Product Development</span>
+          <span class="skills-check__item"><i class="fas fa-check"></i> Healthcare Innovation</span>
+          <span class="skills-check__item"><i class="fas fa-check"></i> Data Analytics</span>
+          <span class="skills-check__item"><i class="fas fa-check"></i> Leadership</span>
+          <span class="skills-check__item"><i class="fas fa-check"></i> Cross-Cultural Communication</span>
         </div>
       </div>
 
       <!-- Travel Photo Gallery -->
-      <div class="about__gallery">
-        <h3 class="about__gallery-title" style="text-align: center;">International Experiences</h3>
-        <p class="about__gallery-subtitle" style="text-align: center; margin-left: auto; margin-right: auto;">This past summer, I traveled to 9 different countries studying various health systems and populations—one of the most eye-opening experiences of my life.</p>
+      <div class="about__gallery reveal">
+        <div class="about__gallery-header">
+          <h3 class="about__gallery-title">International Experiences</h3>
+          <p class="about__gallery-subtitle">9 countries, countless perspectives. Studying health systems across Europe was one of the most eye-opening experiences of my life.</p>
+        </div>
 
         <div class="gallery__grid">
-          <div class="gallery__item gallery__item--large">
+          <div class="gallery__item gallery__item--tall">
             <img src="images/switzerland.jpg" alt="Paragliding in Switzerland">
-            <div class="gallery__caption">
-              <span class="gallery__flag">🇨🇭</span>
-              <span class="gallery__location">Switzerland</span>
-              <p class="gallery__desc">Taking the leap—jumping off a mountain was terrifying but incredibly rewarding.</p>
+            <div class="gallery__overlay">
+              <div class="gallery__caption">
+                <p class="gallery__location">Switzerland</p>
+                <p class="gallery__desc">Taking the leap—jumping off a mountain was terrifying but incredibly rewarding.</p>
+              </div>
             </div>
           </div>
           <div class="gallery__item">
             <img src="images/norway.jpg" alt="Standing on a cliff in Norway">
-            <div class="gallery__caption">
-              <span class="gallery__flag">🇳🇴</span>
-              <span class="gallery__location">Norway</span>
-              <p class="gallery__desc">Finding my edge—feeling incredibly small but also incredibly alive.</p>
+            <div class="gallery__overlay">
+              <div class="gallery__caption">
+                <p class="gallery__location">Norway</p>
+                <p class="gallery__desc">Finding my edge on the fjords.</p>
+              </div>
             </div>
           </div>
           <div class="gallery__item">
             <img src="images/norway2.jpg" alt="Norway fjords">
-            <div class="gallery__caption">
-              <span class="gallery__flag">🇳🇴</span>
-              <span class="gallery__location">Norway</span>
-              <p class="gallery__desc">The fjords were unlike anything I'd ever seen—simply breathtaking.</p>
+            <div class="gallery__overlay">
+              <div class="gallery__caption">
+                <p class="gallery__location">Norway</p>
+                <p class="gallery__desc">Simply breathtaking views.</p>
+              </div>
             </div>
           </div>
           <div class="gallery__item">
             <img src="images/italy.jpg" alt="Italy adventures">
-            <div class="gallery__caption">
-              <span class="gallery__flag">🇮🇹</span>
-              <span class="gallery__location">Italy</span>
-              <p class="gallery__desc">La Dolce Vita—the food, people, and rich history completely won me over.</p>
+            <div class="gallery__overlay">
+              <div class="gallery__caption">
+                <p class="gallery__location">Italy</p>
+                <p class="gallery__desc">La Dolce Vita.</p>
+              </div>
             </div>
           </div>
           <div class="gallery__item">
             <img src="images/paris.jpg" alt="French Open in Paris">
-            <div class="gallery__caption">
-              <span class="gallery__flag">🇫🇷</span>
-              <span class="gallery__location">France</span>
-              <p class="gallery__desc">Dream come true—experiencing the French Open at Roland Garros.</p>
+            <div class="gallery__overlay">
+              <div class="gallery__caption">
+                <p class="gallery__location">France</p>
+                <p class="gallery__desc">Roland Garros—a dream come true.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <!-- Personal Background -->
-      <div class="about__personal">
+      <div class="about__personal reveal">
         <div class="personal__grid">
-          <div class="personal__item">
-            <i class="fas fa-users personal__icon-fa"></i>
+          <div class="personal__card">
+            <i class="fas fa-users personal__card-icon"></i>
             <h4>Big Family Energy</h4>
-            <p>3rd of 12 children—family dinners are organized chaos, teaching me to work with different personalities and bring people together.</p>
+            <p>3rd of 12 children—family dinners are organized chaos, teaching me to work with different personalities.</p>
           </div>
-          <div class="personal__item">
-            <i class="fas fa-user-friends personal__icon-fa"></i>
+          <div class="personal__card">
+            <i class="fas fa-user-friends personal__card-icon"></i>
             <h4>Twin Life</h4>
-            <p>My twin brother and I have always pushed each other to be better in academics, sports, and life. We're competitive in the best way.</p>
+            <p>My twin brother and I push each other to be better. We're competitive in the best way.</p>
           </div>
-          <div class="personal__item">
-            <i class="fas fa-trophy personal__icon-fa"></i>
+          <div class="personal__card">
+            <i class="fas fa-trophy personal__card-icon"></i>
             <h4>Tennis & Basketball</h4>
-            <p>Tennis Academic All-State Award recipient. Basketball Team Captain as a freshman—learning to earn respect through hard work.</p>
+            <p>Tennis Academic All-State. Basketball Team Captain as a freshman.</p>
           </div>
-          <div class="personal__item">
-            <i class="fas fa-award personal__icon-fa"></i>
+          <div class="personal__card">
+            <i class="fas fa-award personal__card-icon"></i>
             <h4>Eagle Scout</h4>
-            <p>First in my family to earn Eagle Scout—teaching me about following through on commitments and working toward common goals.</p>
+            <p>First in my family to earn Eagle Scout—following through on commitments.</p>
           </div>
         </div>
       </div>
 
       <!-- Family Photo -->
-      <div class="about__family">
+      <div class="about__family reveal">
         <img src="images/family.jpg" alt="Alex with his family">
         <p class="about__family-caption">With 11 siblings, life is never quiet! Our family emphasizes hard work, serving others, and chasing meaningful goals.</p>
       </div>
@@ -1223,42 +1489,42 @@
   </section>
 
   <!-- ═══════════════════════════════════════════════════════════════════════
-       MILESTONES
+       TIMELINE — Journey
        ═══════════════════════════════════════════════════════════════════════ -->
-  <section id="milestones" class="section section--gray">
+  <section id="journey" class="timeline">
     <div class="container">
-      <div class="section__header">
-        <p class="section__label">The Journey</p>
+      <div class="section__header reveal">
+        <p class="section__eyebrow">The Journey</p>
         <h2 class="section__title">Key Milestones</h2>
       </div>
 
-      <div class="milestones__grid">
-        <div class="milestone">
-          <div class="milestone__number">01</div>
-          <p class="milestone__date">Expected 2027</p>
-          <h3 class="milestone__title">BYU Marriott School</h3>
-          <p class="milestone__desc">B.S. Strategic Management · 3.97 GPA · Phi Kappa Phi · Healthcare Leadership Minor</p>
+      <div class="timeline__track">
+        <div class="timeline__item reveal">
+          <p class="timeline__eyebrow">01 · Education</p>
+          <p class="timeline__year">2027</p>
+          <h3 class="timeline__title">BYU Marriott School</h3>
+          <p class="timeline__desc">B.S. Strategic Management · 3.97 GPA · Phi Kappa Phi · Healthcare Leadership Minor</p>
         </div>
 
-        <div class="milestone">
-          <div class="milestone__number">02</div>
-          <p class="milestone__date">2024 – Present</p>
-          <h3 class="milestone__title">VP, BYU Strategy Program</h3>
-          <p class="milestone__desc">Elected VP of Student Development, championing mentorship and building company pipelines.</p>
+        <div class="timeline__item reveal reveal-delay-1">
+          <p class="timeline__eyebrow">02 · Leadership</p>
+          <p class="timeline__year">2024</p>
+          <h3 class="timeline__title">VP, Strategy Program</h3>
+          <p class="timeline__desc">Elected VP of Student Development, championing mentorship and building company pipelines.</p>
         </div>
 
-        <div class="milestone">
-          <div class="milestone__number">03</div>
-          <p class="milestone__date">2024 – Present</p>
-          <h3 class="milestone__title">Healthcare Research Lead</h3>
-          <p class="milestone__desc">Pioneered inaugural Big XII Healthcare Case Competition, engaging 200+ students and 25+ executives.</p>
+        <div class="timeline__item reveal reveal-delay-2">
+          <p class="timeline__eyebrow">03 · Research</p>
+          <p class="timeline__year">2024</p>
+          <h3 class="timeline__title">Healthcare Research Lead</h3>
+          <p class="timeline__desc">Pioneered inaugural Big XII Healthcare Case Competition, engaging 200+ students.</p>
         </div>
 
-        <div class="milestone">
-          <div class="milestone__number">04</div>
-          <p class="milestone__date">2024</p>
-          <h3 class="milestone__title">Product Innovation Intern</h3>
-          <p class="milestone__desc">Drove 5x increase in buyer identification at Replay AI through strategic process development.</p>
+        <div class="timeline__item reveal reveal-delay-3">
+          <p class="timeline__eyebrow">04 · Industry</p>
+          <p class="timeline__year">2024</p>
+          <h3 class="timeline__title">Product Innovation Intern</h3>
+          <p class="timeline__desc">Drove 5x increase in buyer identification at Replay AI through strategic process development.</p>
         </div>
       </div>
     </div>
@@ -1267,15 +1533,15 @@
   <!-- ═══════════════════════════════════════════════════════════════════════
        RESUME
        ═══════════════════════════════════════════════════════════════════════ -->
-  <section id="resume" class="section">
+  <section id="resume" class="section section--cream">
     <div class="container">
-      <div class="section__header">
-        <p class="section__label">Resume</p>
+      <div class="section__header reveal">
+        <p class="section__eyebrow">Resume</p>
         <h2 class="section__title">Experience & Education</h2>
       </div>
 
       <!-- Education -->
-      <div class="resume__section">
+      <div class="resume__section reveal">
         <h3 class="resume__section-title"><i class="fas fa-graduation-cap"></i> Education</h3>
         <div class="resume__card">
           <div class="resume__header">
@@ -1299,7 +1565,7 @@
       </div>
 
       <!-- Professional Experience -->
-      <div class="resume__section">
+      <div class="resume__section reveal">
         <h3 class="resume__section-title"><i class="fas fa-briefcase"></i> Professional Experience</h3>
 
         <div class="resume__card">
@@ -1310,9 +1576,9 @@
           <p class="resume__company">BYU Marriott School · Project/Research Assistant</p>
           <ul class="resume__list">
             <li>Pioneering research for inaugural 2025 Big XII Healthcare Leadership Case Competition & Student Summit</li>
-            <li>Coordinated outreach to 100+ industry leaders, driving <strong>200% increase</strong> in student placement opportunities</li>
+            <li>Coordinated outreach to 100+ industry leaders, driving <strong>200% increase</strong> in student placement</li>
             <li>Organized Business in Healthcare Career Fair connecting 28 employers with 200+ students</li>
-            <li>Enhanced Healthcare Mentorship Program, increasing student-mentor match success rate by <strong>250%</strong></li>
+            <li>Enhanced Healthcare Mentorship Program, increasing match success rate by <strong>250%</strong></li>
           </ul>
         </div>
 
@@ -1323,9 +1589,9 @@
           </div>
           <p class="resume__company">Replay · AI-Powered Sales Training Solutions · Orem, UT</p>
           <ul class="resume__list">
-            <li>Developed strategic buyer identification process, driving <strong>5x increase</strong> in potential product buyers</li>
-            <li>Led product testing sessions, uncovering key user insights for enhanced market readiness</li>
-            <li>Applied product management principles to refine launch systems and user experience</li>
+            <li>Developed strategic buyer identification process, driving <strong>5x increase</strong> in potential buyers</li>
+            <li>Led product testing sessions, uncovering key user insights for market readiness</li>
+            <li>Applied product management principles to refine launch systems and UX</li>
           </ul>
         </div>
 
@@ -1336,52 +1602,39 @@
           </div>
           <p class="resume__company">FSY · Santa Barbara, CA</p>
           <ul class="resume__list">
-            <li>Trained and supervised 10+ counselors weekly, fostering high-performing team environment</li>
-            <li>Led 5+ large-scale events for <strong>2000+ youth participants</strong> focused on inclusion and unity</li>
-          </ul>
-        </div>
-
-        <div class="resume__card">
-          <div class="resume__header">
-            <h4>Infield Mentor</h4>
-            <span class="resume__date">Aug 2023 - Apr 2024</span>
-          </div>
-          <p class="resume__company">Missionary Training Center · Provo, UT</p>
-          <ul class="resume__list">
-            <li>Coached 20+ representatives weekly on goal-setting and networking skills</li>
-            <li>Achieved <strong>20% improvement</strong> in key indicator scores through personalized mentorship</li>
-            <li>Developed feedback-driven coaching strategies for high-stress environments</li>
+            <li>Trained and supervised 10+ counselors weekly</li>
+            <li>Led 5+ large-scale events for <strong>2000+ youth participants</strong></li>
           </ul>
         </div>
       </div>
 
       <!-- Leadership & Service -->
-      <div class="resume__section">
+      <div class="resume__section reveal">
         <h3 class="resume__section-title"><i class="fas fa-users"></i> Leadership & Service</h3>
 
         <div class="resume__grid">
           <div class="resume__card resume__card--compact">
             <h4>Lead Ambassador</h4>
             <p class="resume__company">Healthcare Leadership Association · BYU</p>
-            <p class="resume__desc">Engage with 100+ students weekly, driving 150% increase in club participation. Scaled expansion efforts to reach 500+ business students while managing team of 8 leaders.</p>
+            <p class="resume__desc">Engage with 100+ students weekly, driving 150% increase in club participation. Managing team of 8 leaders.</p>
           </div>
 
           <div class="resume__card resume__card--compact">
             <h4>Patient Experience Volunteer</h4>
             <p class="resume__company">Intermountain Health (UVH) · Provo, UT</p>
-            <p class="resume__desc">Enhance experience for 1,000+ visitors, patients, and staff. Provide translation services to improve patient communication for diverse populations.</p>
+            <p class="resume__desc">Enhance experience for 1,000+ visitors, patients, and staff. Provide translation services.</p>
           </div>
 
           <div class="resume__card resume__card--compact">
             <h4>Full-time Representative</h4>
             <p class="resume__company">LDS Church · Ecuador & Washington DC</p>
-            <p class="resume__desc">Mentored 150+ volunteers across Ecuador & Washington DC. Contributed 350+ hours of service to indigenous communities.</p>
+            <p class="resume__desc">Mentored 150+ volunteers. Contributed 350+ hours to indigenous communities.</p>
           </div>
         </div>
       </div>
 
       <!-- Skills -->
-      <div class="resume__section">
+      <div class="resume__section reveal">
         <h3 class="resume__section-title"><i class="fas fa-cog"></i> Skills & Competencies</h3>
         <div class="skills__grid">
           <div class="skills__category">
@@ -1399,7 +1652,7 @@
             <h4>Leadership & Communication</h4>
             <div class="skills__list">
               <span class="skill-tag">Spanish (Fluent)</span>
-              <span class="skill-tag">Cross-Cultural Communication</span>
+              <span class="skill-tag">Cross-Cultural</span>
               <span class="skill-tag">Team Management</span>
               <span class="skill-tag">Public Speaking</span>
             </div>
@@ -1415,27 +1668,26 @@
           </div>
         </div>
       </div>
-
     </div>
   </section>
 
   <!-- ═══════════════════════════════════════════════════════════════════════
        PROJECTS
        ═══════════════════════════════════════════════════════════════════════ -->
-  <section id="projects" class="section section--gray">
+  <section id="projects" class="section">
     <div class="container">
-      <div class="section__header">
-        <p class="section__label">Selected Work</p>
+      <div class="section__header reveal">
+        <p class="section__eyebrow">Selected Work</p>
         <h2 class="section__title">Projects & Case Studies</h2>
       </div>
 
       <div class="projects__grid">
-        <div class="project-card">
+        <div class="project-card reveal">
           <p class="project-card__number">Project 01</p>
           <h3 class="project-card__title">Healthy Student Planner</h3>
           <p class="project-card__role">Creator & Developer</p>
           <p class="project-card__desc">
-            A comprehensive web application combining academic planning with wellness tracking. Built with JavaScript and deployed on Vercel, helping students maintain both academic success and healthy habits.
+            A comprehensive web application combining academic planning with wellness tracking. Built with JavaScript and deployed on Vercel.
           </p>
           <div class="project-card__tags">
             <span class="project-tag">JavaScript</span>
@@ -1447,7 +1699,7 @@
           </a>
         </div>
 
-        <div class="project-card project-card--placeholder">
+        <div class="project-card project-card--placeholder reveal reveal-delay-1">
           <p class="project-card__number">Project 02</p>
           <h3 class="project-card__title">Parenting App</h3>
           <p class="project-card__role">Creator & Developer</p>
@@ -1464,12 +1716,12 @@
           </span>
         </div>
 
-        <div class="project-card">
+        <div class="project-card reveal reveal-delay-2">
           <p class="project-card__number">Project 03</p>
           <h3 class="project-card__title">Strategic Case Competitions</h3>
           <p class="project-card__role">Strategy Analyst</p>
           <p class="project-card__desc">
-            Researched and presented real-world strategic solutions for companies including Tesla, Walmart, Apple, Google, Dominos, Airbnb, Leland, and Skullcandy.
+            Researched and presented strategic solutions for Tesla, Walmart, Apple, Google, Dominos, Airbnb, Leland, and Skullcandy.
           </p>
           <div class="project-card__tags">
             <span class="project-tag">Strategy</span>
@@ -1481,12 +1733,12 @@
           </span>
         </div>
 
-        <div class="project-card">
+        <div class="project-card reveal reveal-delay-3">
           <p class="project-card__number">Project 04</p>
           <h3 class="project-card__title">Big XII Healthcare Summit</h3>
           <p class="project-card__role">Research Lead & Coordinator</p>
           <p class="project-card__desc">
-            Pioneered research and planning for the inaugural 2025 Big XII Healthcare Leadership Case Competition & Student Summit, coordinating outreach to 100+ industry leaders.
+            Pioneered research for the inaugural 2025 Big XII Healthcare Leadership Case Competition, coordinating outreach to 100+ industry leaders.
           </p>
           <div class="project-card__tags">
             <span class="project-tag">Healthcare</span>
@@ -1504,24 +1756,24 @@
   <!-- ═══════════════════════════════════════════════════════════════════════
        TESTIMONIALS
        ═══════════════════════════════════════════════════════════════════════ -->
-  <section id="testimonials" class="section section--gray">
+  <section id="testimonials" class="section section--cream">
     <div class="container">
-      <div class="section__header">
-        <p class="section__label">Kind Words</p>
+      <div class="section__header reveal">
+        <p class="section__eyebrow">Kind Words</p>
         <h2 class="section__title">What Others Say</h2>
       </div>
 
       <div class="testimonials__grid">
-        <div class="testimonial">
+        <div class="testimonial reveal">
           <div class="testimonial__quote">"</div>
           <p class="testimonial__text">
-            Alex is an exceptional talent that any organization would be very lucky to have. His exceptional ability to be dependable and professional in his roles is especially notable. Alex is a class act—always thoughtful and considerate.
+            Alex is an exceptional talent that any organization would be very lucky to have. His exceptional ability to be dependable and professional is especially notable. Alex is a class act—always thoughtful and considerate.
           </p>
           <p class="testimonial__author">Taylor W.</p>
           <p class="testimonial__title">President, BYU Healthcare Leadership Association</p>
         </div>
 
-        <div class="testimonial">
+        <div class="testimonial reveal reveal-delay-1">
           <div class="testimonial__quote">"</div>
           <p class="testimonial__text">
             His ability to lead with integrity and purpose inspired those around him. Alex is deeply compassionate and selfless, consistently ensuring that others feel included, supported, and valued.
@@ -1530,7 +1782,7 @@
           <p class="testimonial__title">CEO & Founder, Successful Leaders LLC</p>
         </div>
 
-        <div class="testimonial">
+        <div class="testimonial reveal reveal-delay-2">
           <div class="testimonial__quote">"</div>
           <p class="testimonial__text">
             Alex is clearly a very strong and gifted student—humble, eager to learn, and genuinely kind. His friendly and caring nature fosters a positive environment in any setting.
@@ -1547,14 +1799,14 @@
        ═══════════════════════════════════════════════════════════════════════ -->
   <section id="learnings" class="section">
     <div class="container">
-      <div class="section__header" style="text-align: center;">
-        <p class="section__label">Life Learnings</p>
+      <div class="section__header reveal">
+        <p class="section__eyebrow">Life Learnings</p>
         <h2 class="section__title">Wisdom from Incredible People</h2>
-        <p style="color: var(--color-gray-500); max-width: 600px; margin: 16px auto 0;">Lessons from remarkable individuals I've been fortunate to meet along the way.</p>
+        <p class="section__subtitle">Lessons from remarkable individuals I've been fortunate to meet along the way.</p>
       </div>
 
       <div class="learnings__grid">
-        <div class="learning-card">
+        <div class="learning-card reveal">
           <div class="learning-card__image">
             <img src="images/dwayne_wade.jpeg" alt="Dwayne Wade">
           </div>
@@ -1569,27 +1821,36 @@
   </section>
 
   <!-- ═══════════════════════════════════════════════════════════════════════
-       CONTACT
+       CONTACT — Colored Background with Large Icons
        ═══════════════════════════════════════════════════════════════════════ -->
   <section id="contact" class="contact">
     <div class="container">
-      <h2 class="contact__title">Let's Build Something Meaningful</h2>
-      <p class="contact__subtitle">
-        I'm always excited to connect with people who share a passion for strategy, healthcare innovation, and making a positive difference.
-      </p>
-      <a href="mailto:alexnap101@gmail.com" class="contact__email">
-        alexnap101@gmail.com
-      </a>
-      <div class="contact__links">
-        <a href="https://www.linkedin.com/in/alex-napierski/" class="contact__link" target="_blank">
-          <i class="fab fa-linkedin"></i> LinkedIn
-        </a>
-        <a href="https://github.com/ajnap" class="contact__link" target="_blank">
-          <i class="fab fa-github"></i> GitHub
-        </a>
-        <a href="tel:+18014207131" class="contact__link">
-          <i class="fas fa-phone"></i> (801) 420-7131
-        </a>
+      <div class="contact__inner reveal">
+        <p class="contact__eyebrow">Get In Touch</p>
+        <h2 class="contact__title">Let's Build Something Meaningful</h2>
+        <p class="contact__subtitle">
+          I'm always excited to connect with people who share a passion for strategy, healthcare innovation, and making a positive difference.
+        </p>
+
+        <div class="contact__methods">
+          <a href="mailto:alexnap101@gmail.com" class="contact__method">
+            <div class="contact__method-icon"><i class="fas fa-envelope"></i></div>
+            <p class="contact__method-label">Write Me</p>
+            <p class="contact__method-value">alexnap101@gmail.com</p>
+          </a>
+
+          <a href="tel:+18014207131" class="contact__method">
+            <div class="contact__method-icon"><i class="fas fa-phone"></i></div>
+            <p class="contact__method-label">Call Me</p>
+            <p class="contact__method-value">+1 (801) 420-7131</p>
+          </a>
+
+          <a href="https://www.linkedin.com/in/alex-napierski/" target="_blank" class="contact__method">
+            <div class="contact__method-icon"><i class="fab fa-linkedin-in"></i></div>
+            <p class="contact__method-label">Find Me</p>
+            <p class="contact__method-value">linkedin.com/in/alex-napierski</p>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -1602,6 +1863,37 @@
       <p class="footer__text">© 2025 Alex Napierski. Built with purpose.</p>
     </div>
   </footer>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       SCRIPTS
+       ═══════════════════════════════════════════════════════════════════════ -->
+  <script>
+    // Header scroll effect
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Scroll reveal animations
+    const revealElements = document.querySelectorAll('.reveal');
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+  </script>
 
 </body>
 </html>
